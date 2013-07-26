@@ -25,17 +25,12 @@
 			min-width: 800px;
 		}
 
-		h1.main {
+		#main {
 			margin: 150px 0;
 			text-align: center;
 			font-size: 100px;
 			font-family: 'Wire One', sans-serif;
-
-		}
-
-		.container-fluid-full {
-			height: 100%;
-			position: relative;
+			opacity: 0;
 		}
 
 		#sidebar-left {
@@ -61,7 +56,7 @@
 		#content {
 			width: 85%;
 			margin: 0 auto;
-			padding: 0 20px 100px;
+			padding: 0 20px;
 		}
 
 		.well {
@@ -77,127 +72,117 @@
 			padding: 15px 30px;
 		}
 
-		.code-node { color: #006; }
-		.code-class { color: #060; }
-		.code-prop { color: #800080; }
-		.code-xprop { color: #800080; font-style: italic; }
-		.code-str { color: #060; }
-		.code-comment { color: #999; }
+		.code { white-space: nowrap; }
+			.code-node { color: #006; }
+			.code-class { color: #060; }
+			.code-prop { color: #800080; }
+			.code-xprop { color: #800080; font-style: italic; }
+			.code-str { color: #060; }
+			.code-comment { color: #999; }
 
 		.well {
 			max-height: 300px;
 			overflow: auto;
 		}
+
+		.done-true {
+			text-decoration: line-through;
+		}
+
+		.todoapp input {
+			vertical-align: top;
+			margin-right: 10px;
+		}
+
+		.teach-me {
+			margin: 150px 0 180px;
+			text-align: center;
+		}
+			.teach-me a {
+				font-size: 100px;
+				font-family: 'Wire One', sans-serif;
+			}
+
+
+		#main {
+			-webkit-transition: all 1s ease-in;
+			-moz-transition: all 1s ease-in;
+			transition: all 1s ease-in;
+		}
+
+		.example .code,
+		.example .preview {
+			top: 10px;
+			opacity: 0;
+			position: relative;
+			-webkit-transition: all .6s ease-out;
+			-moz-transition: all .6s ease-out;
+			transition: all .6s ease-out;
+		}
+			.example .preview {
+			 	-webkit-transition-delay: .2s;
+			 	-moz-transition-delay: .2s;
+			}
+
+			.example.show .code,
+			.example.show .preview {
+				top: 0;
+				opacity: 1;
+			}
 	</style>
 </head>
 <body>
 	<script x-ctrl="main" type="text/xtpl">
 		// Main Page
-		.container-fluid-full {
+		.splash {
 			.row-fluid {
 				// Page content
 				div#content {
-					h1.main | Simple. Easy. Quickly.
+					h1#main {
+						x-fade-to: ctx.showH1
+						| Simple. Easy. Quickly.
+					}
 
 					// "Hello"
-					.row-fluid {
-						.span7.well | {*ctx.examples.hello.xtpl | xcode*}
+					.row-fluid.example {
+						class: { show: ctx.examples.hello.show; }
 
-						.span5.well {
-						   h4 | Hello {{ctx.name || "%username%"}}!
-						   input { type: "text", x-model: ctx.name }
-						}
+						.span7.well.code | {* ctx.examples.hello.xtpl | xcode *}
+						.span5.preview { x-eval: ctx.examples.hello.xtpl }
 					}
 
 					// "Counter"
-					.row-fluid {
-						.span7.well | {*ctx.examples.counter.xtpl | xcode*}
+					.row-fluid.example {
+						class: { show: ctx.examples.counter.show; }
 
-						.span5.well[style="text-align: center"] {
-							input.btn.btn-success.xlarge[type="button"] {
-								x-click: ctx.examples.counter.ctx.cnt++;
-								value: ctx.examples.counter.ctx.cnt || "Click me"
-							}
-						}
+						.span7.well.code | {* ctx.examples.counter.xtpl | xcode *}
+						.span5.well.preview[style="text-align: center"] { x-eval: ctx.examples.counter.xtpl }
 					}
 
 					// "List"
-					.row-fluid {
-						.span7.well | {*ctx.examples.list.xtpl | xcode*}
+					.row-fluid.example {
+						class: { show: ctx.examples.list.show; }
 
-						.span5.well[x-ctrl="list"] {
-							// Form add an item
-							form {
-								x-submit: ctx.addItem(ctx.newItem);
-								input[type="text"][placeholder="Add new item"] {
-									x-model: ctx.newItem
-									x-autofocus: ctx.newItem === ""
-								}
-							}
+						.span7.well.code | {* ctx.examples.list.xtpl | xcode *}
+						.span5.well.preview[x-ctrl="list"] { x-eval: ctx.examples.list.xtpl }
+					}
 
-							// Item list
-							ul.nav.nav-pills.nav-stacked {
-								for item in ctx.items {
-									li {
-										x-click: ctx.selectedItem = item;
-										class: { active: item === ctx.selectedItem }
-										a[href=""] | {{item}}
-									}
-								}
-							}
+					// "Todos app"
+					.row-fluid.example {
+						class: { show: ctx.examples.todos.show; }
 
-							// Sorting
-							div {
-								button.btn.btn-small {
-									x-click: ctx.sortItems(ctx.SORT_ASC);
-									| asc
-								}
-
-								| &nbsp; &nbsp;
-
-								button.btn.btn-small {
-									x-click: ctx.sortItems(ctx.SORT_DESC);
-									| desc
-								}
-							}
-						}
+						.span7.well.code | {* ctx.examples.todos.xtpl | xcode *}
+						.span5.well.todoapp.preview[x-ctrl="todos"] { x-eval: ctx.examples.todos.xtpl }
 					}
 				}
+			}
+
+			.teach-me {
+				a[href="#!/api/"] | Shut up and teach me!
 			}
 		}
 	</script>
 
-
-
-
-	<!--script x-ctrl="todos" type="text/xtpl">
-		h2 | Todos
-		div {
-			span | {{ctx.remaining()}} of {{ctx.todos.length}} remaining |
-
-			| [ |
-			a[href=""] {
-				x-click: ctx.archive()
-				| archive
-			}
-			| ] |
-
-			ul.unstyled {
-				for todo in todos {
-					li {
-						input[type="checkbox"] { x-model: todo.done }
-						span[class="done-{{todo.done}}"] | {{todo.text}}
-					}
-				}
-			}
-
-			form {
-				x-submit: ctx.addTodo()
-				input[type="text"][size="30"][placeholder="add new todo here"] { x-model: ctx.todoText }
-				input.btn-primary[type="submit"][value="add"]
-			}
-		}
-	</script-->
 
 
 	<script src="/js/xtpl.min.js"></script>
@@ -215,7 +200,7 @@
 						.replace(/((?:^\s*|>)\.)([.\w-]+)/g, '$1<span class="code-class">$2</span>')
 						.replace(/(\s)(x-\w+:)/g, '$1<span class="code-xprop">$2</span>')
 						.replace(/(\s)(\w+:)/g, '$1<span class="code-prop">$2</span>')
-						.replace(/\[([^=]+)/g, '[<span class="code-prop">$1</span>')
+						.replace(/\[(\w[^=]+)/g, '[<span class="code-prop">$1</span>')
 						.replace(/\t/g, '&nbsp; &nbsp;')
 						.replace(/\s{2}/g, '&nbsp; &nbsp;')
 						.replace(/(\/\/[^$]+)/, '<span class="code-comment">$1</span>')
@@ -223,6 +208,8 @@
 				});
 				return	code.join('<br/>');
 			});
+
+			ctx.counter = 0;
 
 			ctx.sidebar = {
 				items: [
@@ -232,61 +219,30 @@
 				path: location.path
 			};
 
-			ctx.examples = {
-				hello: {
-					xtpl: [
-						'.well {',
-						'   h4 | Hello {{ctx.name || "%username%"}}!',
-						'   input { type: "text", x-model: ctx.name }',
-						'}'
-					].join('\n')
-				},
+			ctx.examples = (function (){
+				var res = {};
+				var xhr = new XMLHttpRequest();
+				xhr.open("GET", "./examples/splash.xtpl", false);
+				xhr.send(null);
 
-				counter: {
-					ctx: { cnt: 0 },
-					xtpl: [
-						'input.btn.btn-success[type="button"] {',
-						'   x-click: ctx.counter++;',
-						'   value: {{ctx.counter || "Click me"}}',
-						'}'
-					].join('\n')
-				},
+				xtpl.utils.each(xhr.responseText.split('----- '), function (code){
+					var name;
+					code = code.replace(/^(.*?) -----/, function (_, val){ name = val; return '' });
+					res[name] = { xtpl: code.trim() };
+				});
+				return	res;
+			})();
 
-				list: {
-					xtpl: [
-						'// Form add an item',
-						'form {',
-						'	x-submit: ctx.addItem(ctx.newItem);',
-						'	input[type="text"][placeholder="Add new item"] {',
-						'		x-model: ctx.newItem',
-						'		x-autofocus: ctx.newItem === ""',
-						'	}',
-						'}',
-						'// Items list',
-						'ul.nav.nav-pills.nav-stacked {',
-						'	for item in ctx.items {',
-						'		li {',
-						'			x-click: ctx.selectedItem = item;',
-						'			class: { active: item === ctx.selectedItem }',
-						'			a[href=""] | {{item}}',
-						'		}',
-						'	}',
-						'}',
-						'// Sorting',
-						'div {',
-						'	button.btn.btn-small {',
-						'		x-click: ctx.sortItems(ctx.SORT_ASC);',
-						'		| asc',
-						'	}',
-						'	| &nbsp; &nbsp;',
-						'	button.btn.btn-small {',
-						'		x-click: ctx.sortItems(ctx.SORT_DESC);',
-						'		| desc',
-						'	}',
-						'}'
-					].join('\n')
-				}
-			};
+
+			// Animation
+			ctx.$delay(function (){
+				ctx.$set('showH1', true);
+				xtpl.utils.each(['hello', 'counter', 'list', 'todos'], function (name, i){
+					ctx.$delay(function (){
+						ctx.examples[name].show = true;
+					}, 200 * (i + 1));
+				});
+			});
 		});
 
 
@@ -324,6 +280,36 @@
 			};
 		});
 
+
+		xtpl.ctrl('todos', function (ctx){
+			ctx.todos = [
+				{text: 'learn angular', done: true},
+				{text: 'build an angular app', done: false}
+			];
+
+			ctx.addTodo = function (){
+				ctx.todos.push({text: ctx.todoText, done: false});
+				ctx.todoText = '';
+			};
+
+			ctx.remaining = function (){
+				var count = 0;
+				xtpl.each(ctx.todos, function (todo){
+					count += todo.done ? 0 : 1;
+				});
+				return count;
+			};
+
+			ctx.archive = function (){
+				var oldTodos = ctx.todos;
+				ctx.todos = [];
+				xtpl.each(oldTodos, function (todo){
+					if( !todo.done ) ctx.todos.push(todo);
+				});
+			};
+
+			return	ctx;
+		});
 	</script>
 
 </body>
