@@ -82,6 +82,7 @@
 		.code-prop { color: #800080; }
 		.code-xprop { color: #800080; font-style: italic; }
 		.code-str { color: #060; }
+		.code-comment { color: #999; }
 
 		.well {
 			max-height: 300px;
@@ -125,6 +126,7 @@
 						.span7.well | {*ctx.examples.list.xtpl | xcode*}
 
 						.span5.well[x-ctrl="list"] {
+							// Form add an item
 							form {
 								x-submit: ctx.addItem(ctx.newItem);
 								input[type="text"][placeholder="Add new item"] {
@@ -133,6 +135,7 @@
 								}
 							}
 
+							// Item list
 							ul.nav.nav-pills.nav-stacked {
 								for item in ctx.items {
 									li {
@@ -143,6 +146,7 @@
 								}
 							}
 
+							// Sorting
 							div {
 								button.btn.btn-small {
 									x-click: ctx.sortItems(ctx.SORT_ASC);
@@ -165,17 +169,8 @@
 
 
 
-		<!--script type="text/xtpl">
-			div.well {
-				label | Name:
-				input[type="text"][placeholder="Enter a name here"] { x-model: ctx.yourName }
-				hr {}
-				h1 | Hello {{ctx.yourName}}
-			}
-		</script-->
 
-
-		<!--script x-ctrl="todos" type="text/xtpl">
+	<!--script x-ctrl="todos" type="text/xtpl">
 		h2 | Todos
 		div {
 			span | {{ctx.remaining()}} of {{ctx.todos.length}} remaining |
@@ -223,6 +218,7 @@
 						.replace(/\[([^=]+)/g, '[<span class="code-prop">$1</span>')
 						.replace(/\t/g, '&nbsp; &nbsp;')
 						.replace(/\s{2}/g, '&nbsp; &nbsp;')
+						.replace(/(\/\/[^$]+)/, '<span class="code-comment">$1</span>')
 					;
 				});
 				return	code.join('<br/>');
@@ -258,6 +254,7 @@
 
 				list: {
 					xtpl: [
+						'// Form add an item',
 						'form {',
 						'	x-submit: ctx.addItem(ctx.newItem);',
 						'	input[type="text"][placeholder="Add new item"] {',
@@ -265,7 +262,7 @@
 						'		x-autofocus: ctx.newItem === ""',
 						'	}',
 						'}',
-						'',
+						'// Items list',
 						'ul.nav.nav-pills.nav-stacked {',
 						'	for item in ctx.items {',
 						'		li {',
@@ -275,7 +272,7 @@
 						'		}',
 						'	}',
 						'}',
-						'',
+						'// Sorting',
 						'div {',
 						'	button.btn.btn-small {',
 						'		x-click: ctx.sortItems(ctx.SORT_ASC);',
