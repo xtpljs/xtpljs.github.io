@@ -119,6 +119,13 @@
 			window.onhashchange();
 		});
 
-		window.ctx = ctx;
+		$(window).scroll(xtpl.utils.throttle(function (){
+			if( ctx.page != '/' ){
+				if( $(window).scrollTop() < 500 ){
+					location.hash = '';
+					window.onhashchange();
+				}
+			}
+		}, 50));
 	});
 })(xtpl, jQuery);
