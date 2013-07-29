@@ -174,19 +174,18 @@ pre code {
 			padding: 15px 30px;
 		}
 
-		.code { white-space: nowrap; }
-			.code-id { color: #f5871f; }
-			.code-node { color: #4271ae; }
-			.code-decl { color: #c82829 }
+		.code-id { color: #f5871f; }
+		.code-node { color: #4271ae; }
+		.code-decl { color: #c82829 }
 
-			.code-str,
-			.code-class { color: #080; }
+		.code-str,
+		.code-class { color: #080; }
 
-			.code-prop,
-			.code-xprop { color: #8959a8; }
-			.code-xprop { font-style: italic; }
+		.code-prop,
+		.code-xprop { color: #8959a8; }
+		.code-xprop { font-style: italic; }
 
-			.code-comment { color: #999; }
+		.code-comment { color: #999; }
 
 
 		.dark .code-id { color: #f0c674; }
@@ -285,7 +284,7 @@ pre code {
 					.row.example {
 						class: { show: ctx.examples.hello.show; }
 
-						.col-lg-7 {
+						.col-lg-7.code {
 							pre > code | {* ctx.examples.hello.xtpl | xcode *}
 						}
 						.col-lg-5.preview { x-eval: ctx.examples.hello.xtpl }
@@ -295,7 +294,7 @@ pre code {
 					.row.example {
 						class: { show: ctx.examples.counter.show; }
 
-						.col-lg-7 {
+						.col-lg-7.code {
 							pre > code | {* ctx.examples.counter.xtpl | xcode *}
 						}
 						.col-lg-5.preview[style="text-align: center"] > .well { x-eval: ctx.examples.counter.xtpl }
@@ -305,20 +304,20 @@ pre code {
 					.row.example {
 						class: { show: ctx.examples.list.show; }
 
-						.col-7 {
+						.col-lg-7.code {
 							pre > code | {* ctx.examples.list.xtpl | xcode *}
 						}
-						.col-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.examples.list.xtpl }
+						.col-lg-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.examples.list.xtpl }
 					}
 
 					// "Todos app"
 					.row.example {
 						class: { show: ctx.examples.todos.show; }
 
-						.col-7 {
+						.col-lg-7.code {
 							pre > code | {* ctx.examples.todos.xtpl | xcode *}
 						}
-						.col-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.examples.todos.xtpl }
+						.col-lg-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.examples.todos.xtpl }
 					}
 				}
 
