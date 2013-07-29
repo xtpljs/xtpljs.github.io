@@ -282,42 +282,44 @@ pre code {
 
 					// "Hello"
 					.row.example {
-						class: { show: ctx.examples.hello.show; }
+						class: { show: ctx.readme["Hello"].show; }
 
 						.col-lg-7.code {
-							pre > code | {* ctx.examples.hello.xtpl | xcode *}
+							pre > code | {* ctx.readme["Hello"].xtpl | xcode *}
 						}
-						.col-lg-5.preview { x-eval: ctx.examples.hello.xtpl }
+						.col-lg-5.preview { x-eval: ctx.readme["Hello"].xtpl }
 					}
 
 					// "Counter"
 					.row.example {
-						class: { show: ctx.examples.counter.show; }
+						class: { show: ctx.readme["Counter"].show; }
 
 						.col-lg-7.code {
-							pre > code | {* ctx.examples.counter.xtpl | xcode *}
+							pre > code | {* ctx.readme["Counter"].xtpl | xcode *}
 						}
-						.col-lg-5.preview[style="text-align: center"] > .well { x-eval: ctx.examples.counter.xtpl }
+						.col-lg-5.preview[style="text-align: center"] > .well {
+							x-eval: ctx.readme["Counter"].xtpl
+						}
 					}
 
 					// "List"
 					.row.example {
-						class: { show: ctx.examples.list.show; }
+						class: { show: ctx.readme["List"].show; }
 
 						.col-lg-7.code {
-							pre > code | {* ctx.examples.list.xtpl | xcode *}
+							pre > code | {* ctx.readme["List"].xtpl | xcode *}
 						}
-						.col-lg-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.examples.list.xtpl }
+						.col-lg-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.readme["List"].xtpl }
 					}
 
 					// "Todos app"
 					.row.example {
-						class: { show: ctx.examples.todos.show; }
+						class: { show: ctx.readme["Todos"].show; }
 
 						.col-lg-7.code {
-							pre > code | {* ctx.examples.todos.xtpl | xcode *}
+							pre > code | {* ctx.readme["Todos"].xtpl | xcode *}
 						}
-						.col-lg-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.examples.todos.xtpl }
+						.col-lg-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.readme["Todos"].xtpl }
 					}
 				}
 

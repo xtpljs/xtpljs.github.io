@@ -79,19 +79,6 @@
 		ctx.counter = 0;
 
 
-		// Load examples
-		ctx.examples = (function (){
-			var res = {};
-			xtpl.utils.each(xtpl.utils.readFile('./examples/splash.xtpl').split('----- '), function (code){
-				var name;
-				code = code.replace(/^(.*?) -----/, function (_, val){ name = val; return '' });
-				res[name] = { xtpl: code.trim() };
-			});
-
-			return	res;
-		})();
-
-
 		// Load readme
 		ctx.readme = (function (){
 			var readme = {};
@@ -117,12 +104,13 @@
 
 
 		// Animation
+		window.onhashchange();
 		ctx.$delay(function (){
 			ctx.$set('showH1', true);
 
-			xtpl.utils.each(['hello', 'counter', 'list', 'todos'], function (name, i){
+			xtpl.utils.each(['Hello', 'Counter', 'List', 'Todos'], function (name, i){
 				ctx.$delay(function (){
-					ctx.examples[name].show = true;
+					ctx.readme[name].show = true;
 				}, 200 * (i + 1));
 			});
 

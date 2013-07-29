@@ -150,3 +150,102 @@ for (idx, text) in ctx.list {
 	&btn { text: "Excellent", icon: "heart", mod: "primary" }
 }
 ```
+
+
+
+## Hello
+```xtpl
+.well {
+   h4 | Hello {{ctx.name || "%username%"}}!
+   input.form-control { type: "text", x-model: ctx.name }
+}
+```
+
+
+
+## Counter
+```xtpl
+input.btn.btn-success.xlarge[type="button"] {
+	x-click: ctx.counter++;
+	value: ctx.counter || "Click me"
+}
+```
+
+
+
+## List
+```xtpl
+// Form add an item
+form {
+	x-submit: ctx.addItem(ctx.newItem);
+	input.input-small.form-control[type="text"] {
+		placeholder: "Add new item"
+		x-model: ctx.newItem
+	}
+}
+
+// Item list
+ul.nav.nav-pills.nav-stacked {
+	for item in ctx.items {
+		li {
+			x-click: ctx.selectedItem = item;
+			class: { active: item === ctx.selectedItem }
+			a[href="#"] | {{item}}
+		}
+	}
+}
+
+// Sorting
+div {
+	button.btn.btn-small {
+		x-click: ctx.sortItems(ctx.SORT_ASC);
+		| asc
+	}
+
+	| &nbsp; &nbsp;
+
+	button.btn.btn-small {
+		x-click: ctx.sortItems(ctx.SORT_DESC);
+		| desc
+	}
+}
+```
+
+
+
+## Todos
+```xtpl
+h4 | Todos
+div {
+	span | {{ctx.remaining()}} of {{ctx.todos.length}} remaining [&nbsp;
+
+	a[href=""] {
+		x-click: ctx.archive()
+		| archive
+	}
+	| &nbsp;] |
+
+	ul.list-unstyled {
+		for todo in ctx.todos {
+			li {
+				input[type="checkbox"] { x-model: todo.done }
+				span[class="done-{{todo.done}}"] | {{todo.text}}
+			}
+		}
+	}
+
+	form {
+		x-submit: ctx.addTodo()
+		.input-group {
+			input.form-control.input-small[type="text"] {
+				x-model: ctx.todoText
+				placeholder: "add new todo here"
+			}
+			.input-group-btn > input.btn.btn-primary.btn-small {
+				type: "submit"
+				value: "add"
+			}
+		}
+	}
+}
+```
