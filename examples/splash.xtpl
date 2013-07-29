@@ -1,7 +1,7 @@
 ----- hello -----
 .well {
    h4 | Hello {{ctx.name || "%username%"}}!
-   input { type: "text", x-model: ctx.name }
+   input.form-control { type: "text", x-model: ctx.name }
 }
 
 
@@ -20,9 +20,9 @@ input.btn.btn-success.xlarge[type="button"] {
 // Form add an item
 form {
 	x-submit: ctx.addItem(ctx.newItem);
-	input[type="text"][placeholder="Add new item"] {
+	input.input-small.form-control[type="text"] {
+		placeholder: "Add new item"
 		x-model: ctx.newItem
-		x-autofocus: ctx.newItem === ""
 	}
 }
 
@@ -32,7 +32,7 @@ ul.nav.nav-pills.nav-stacked {
 		li {
 			x-click: ctx.selectedItem = item;
 			class: { active: item === ctx.selectedItem }
-			a[href=""] | {{item}}
+			a[href="#"] | {{item}}
 		}
 	}
 }
@@ -56,7 +56,7 @@ div {
 
 
 ----- todos -----
-h2 | Todos
+h4 | Todos
 div {
 	span | {{ctx.remaining()}} of {{ctx.todos.length}} remaining [&nbsp;
 
@@ -77,7 +77,15 @@ div {
 
 	form {
 		x-submit: ctx.addTodo()
-		input[type="text"][placeholder="add new todo here"] { x-model: ctx.todoText }
-		input.btn.btn-primary[type="submit"][value="add"] { }
+		.input-group {
+			input.form-control.input-small[type="text"] {
+				x-model: ctx.todoText
+				placeholder: "add new todo here"
+			}
+			.input-group-btn > input.btn.btn-primary.btn-small {
+				type: "submit"
+				value: "add"
+			}
+		}
 	}
 }

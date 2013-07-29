@@ -15,22 +15,108 @@
 
 
 
-	<link rel="stylesheet" href="http://designmodo.github.io/Flat-UI/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="http://twitter.github.io/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="http://glyphicons.getbootstrap.com/css/bootstrap-glyphicons.css" />
+
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 
 	<style>
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, pre .comment, pre .title {
+  color: #969896;
+}
+
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #cc6666;
+}
+
+.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #de935f;
+}
+
+.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #f0c674;
+}
+
+.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #b5bd68;
+}
+
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #8abeb7;
+}
+
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #81a2be;
+}
+
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #b294bb;
+}
+
+pre code {
+  display: block;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+}
+	</style>
+
+
+
+
+
+	<style>
+		body, html {
+			padding: 0;
+			margin: 0;
+		}
+
 		body {
-			color: #383e4b;
-			background-color: #f5f5f5;
 			min-width: 800px;
 		}
 
-		#main {
-			margin: 150px 0;
+		.page {
+			-webkit-transition: background-color 1s ease-out;
+			-moz-transition: background-color 1s ease-out;
+			transition: background-color 1s ease-out;
+		}
+
+		.v-hidden {
+			visibility: hidden;
+		}
+
+		.page {
+			color: #383e4b;
+			background-color: #f5f5f5;
+		}
+
+		.page.dark {
+			color: #f5f5f5;
+			background-color: #383e4b;
+		}
+
+
+		h1 {
+			padding: 130px 0;
+			margin: 0;
 			text-align: center;
 			font-size: 100px;
 			font-family: 'Wire One', sans-serif;
 			opacity: 0;
+		}
+
+		h2 {
+			font-family: 'Wire One', sans-serif;
+			font-size: 50px;
+		}
+
+		h3 {
+			font-family: 'Wire One', sans-serif;
+			font-size: 35px;
+			margin: 0 0 15px;
 		}
 
 		#sidebar-left {
@@ -53,19 +139,35 @@
 				}
 
 
-		#content {
+		.content {
 			width: 85%;
 			margin: 0 auto;
 			padding: 0 20px;
 		}
 
-		.well {
+		pre {
+			border: none;
+			padding: 0;
+			background: none;
+		}
+
+		.well, pre code {
 			border: 0;
 			padding: 15px 20px;
 			border-radius: 3px;
-			box-shadow: 0 1px 0 1px #e4e6eb;
+			box-shadow: 0 1px 0 1px rgba(0,0,0,.1);
 			background-color: #fff;
+			max-height: 300px;
+			overflow: auto;
 		}
+			.dark .well,
+			.dark pre code {
+				color: #c5c8c6;
+				background: rgba(29,31,33,.6);
+				box-shadow: 0 1px 0 1px rgba(0,0,0,.4);
+			}
+
+
 
 		.btn.xlarge {
 			font-size: 30px;
@@ -73,29 +175,47 @@
 		}
 
 		.code { white-space: nowrap; }
-			.code-node { color: #006; }
-			.code-class { color: #060; }
-			.code-prop { color: #800080; }
-			.code-xprop { color: #800080; font-style: italic; }
-			.code-str { color: #060; }
+			.code-id { color: #f5871f; }
+			.code-node { color: #4271ae; }
+			.code-decl { color: #c82829 }
+
+			.code-str,
+			.code-class { color: #080; }
+
+			.code-prop,
+			.code-xprop { color: #8959a8; }
+			.code-xprop { font-style: italic; }
+
 			.code-comment { color: #999; }
 
-		.well {
-			max-height: 300px;
-			overflow: auto;
-		}
+
+		.dark .code-id { color: #f0c674; }
+		.dark .code-node { color: #81a2be; }
+		.dark .code-decl { color: #cc6666; }
+
+		.dark .code-prop,
+		.dark .code-xprop { color: #b294bb; }
+
+		.dark .code-comment { color: #969896; }
+
+		.dark .code-str,
+		.dark .code-class { color: #b5bd68; }
 
 		.done-true {
 			text-decoration: line-through;
 		}
 
-		.todoapp input {
+		.example .list .nav {
+			padding: 10px 0;
+		}
+
+		.example .todoapp input {
 			vertical-align: top;
 			margin-right: 10px;
 		}
 
 		.teach-me {
-			margin: 150px 0 180px;
+			padding: 150px 0 180px;
 			text-align: center;
 		}
 			.teach-me a {
@@ -129,123 +249,163 @@
 				top: 0;
 				opacity: 1;
 			}
+
+		.glyphicon {
+			margin-left: 5px;
+			vertical-align: middle;
+		}
+		.confirm .btn {
+			margin-right: 20px;
+		}
 	</style>
 </head>
 <body>
 	<script x-ctrl="main" type="text/xtpl">
-		// Main Page
-		.splash {
-			.row-fluid {
+		a[name="index"] {}
+
+		.page {
+			class: {
+				dark: ctx.page != "/"
+			}
+
+			// Main Page
+			.splash {
+				class: {
+					v-hidden: ctx.page != "/"
+				}
+
 				// Page content
-				div#content {
-					h1#main {
+				.content {
+					h1 {
 						x-fade-to: ctx.showH1
 						| Simple. Easy. Quickly.
 					}
 
 					// "Hello"
-					.row-fluid.example {
+					.row.example {
 						class: { show: ctx.examples.hello.show; }
 
-						.span7.well.code | {* ctx.examples.hello.xtpl | xcode *}
-						.span5.preview { x-eval: ctx.examples.hello.xtpl }
+						.col-lg-7 {
+							pre > code | {* ctx.examples.hello.xtpl | xcode *}
+						}
+						.col-lg-5.preview { x-eval: ctx.examples.hello.xtpl }
 					}
 
 					// "Counter"
-					.row-fluid.example {
+					.row.example {
 						class: { show: ctx.examples.counter.show; }
 
-						.span7.well.code | {* ctx.examples.counter.xtpl | xcode *}
-						.span5.well.preview[style="text-align: center"] { x-eval: ctx.examples.counter.xtpl }
+						.col-lg-7 {
+							pre > code | {* ctx.examples.counter.xtpl | xcode *}
+						}
+						.col-lg-5.preview[style="text-align: center"] > .well { x-eval: ctx.examples.counter.xtpl }
 					}
 
 					// "List"
-					.row-fluid.example {
+					.row.example {
 						class: { show: ctx.examples.list.show; }
 
-						.span7.well.code | {* ctx.examples.list.xtpl | xcode *}
-						.span5.well.preview[x-ctrl="list"] { x-eval: ctx.examples.list.xtpl }
+						.col-7 {
+							pre > code | {* ctx.examples.list.xtpl | xcode *}
+						}
+						.col-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.examples.list.xtpl }
 					}
 
 					// "Todos app"
-					.row-fluid.example {
+					.row.example {
 						class: { show: ctx.examples.todos.show; }
 
-						.span7.well.code | {* ctx.examples.todos.xtpl | xcode *}
-						.span5.well.todoapp.preview[x-ctrl="todos"] { x-eval: ctx.examples.todos.xtpl }
+						.col-7 {
+							pre > code | {* ctx.examples.todos.xtpl | xcode *}
+						}
+						.col-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.examples.todos.xtpl }
+					}
+				}
+
+				.teach-me > a[href="#!/api/"] | Shut up and teach me!
+			}
+
+
+			&doc-item = div.row {
+				h2 | {{ctx.code.name}}
+
+				if ctx.type == "html" {
+					div.col-12 {
+						data-type: "html"
+						x-highlight: ctx.code.html
+					}
+				}
+				else {
+					.col-lg-7 > pre {
+						code | {*ctx.code.xtpl | xcode*}
+					}
+
+					.col-lg-5 {
+						if ctx.output == "xml" {
+							div {
+								data-type: "xml"
+								x-highlight: ctx.code.xml || __xmods.toXML(ctx.code.xtpl)
+							}
+						}
+						else {
+							.well { x-eval: ctx.code.xtpl + "\n|&nbsp;" }
+						}
 					}
 				}
 			}
 
-			.teach-me {
-				a[href="#!/api/"] | Shut up and teach me!
+
+			// Documentation
+			.content {
+				x-show: ctx.page != "/"
+
+				a[name="api"] {}
+				h1[style="opacity:1"] | Getting started
+
+				&doc-item {
+					type: "html"
+					x-code: ctx.readme["xtpl boilerplate"]
+				}
+
+				&doc-item {
+					output: "xml"
+					x-code: ctx.readme["Create element"]
+				}
+
+				&doc-item {
+					output: "xml"
+					x-code: ctx.readme["Simple block"]
+				}
+
+				&doc-item {
+					x-name: ctx.if_else_name
+					x-code: ctx.readme["\"if else\" statement"]
+				}
+
+				&doc-item {
+					x-nav: ctx.each_nav
+					x-list: ctx.each_list
+					x-code: ctx.readme["Each"]
+				}
+
+				&doc-item {
+					x-code: ctx.readme["Tag declaration"]
+				}
+
+				div[style="height: 300px"] {}
 			}
 		}
 	</script>
 
 
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//yandex.st/highlightjs/7.2/highlight.min.js"></script>
+
 	<script src="/js/xtpl.min.js"></script>
+	<script src="./js/main.js"></script>
+
 	<script>
-		xtpl.ctrl('main', function (ctx){
-			xtpl.mod('xcode', function (code){
-				code	= code.split('\n');
-				xtpl.utils.each(code, function (line, i){
-					code[i] = line
-						.replace(/(\|[^$]+)/, function (_, val){
-							return val.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-						})
-						.replace(/(".*?")/g, '<span class="code-str">$1</span>')
-						.replace(/^(\s*)(\w+)([.\s#\[])/g, '$1<span class="code-node">$2</span>$3')
-						.replace(/((?:^\s*|>)\.)([.\w-]+)/g, '$1<span class="code-class">$2</span>')
-						.replace(/(\s)(x-\w+:)/g, '$1<span class="code-xprop">$2</span>')
-						.replace(/(\s)(\w+:)/g, '$1<span class="code-prop">$2</span>')
-						.replace(/\[(\w[^=]+)/g, '[<span class="code-prop">$1</span>')
-						.replace(/\t/g, '&nbsp; &nbsp;')
-						.replace(/\s{2}/g, '&nbsp; &nbsp;')
-						.replace(/(\/\/[^$]+)/, '<span class="code-comment">$1</span>')
-					;
-				});
-				return	code.join('<br/>');
-			});
-
-			ctx.counter = 0;
-
-			ctx.sidebar = {
-				items: [
-					  { path: '/', text: 'About' }
-					, { path: '/started', text: 'Getting started' }
-				],
-				path: location.path
-			};
-
-			ctx.examples = (function (){
-				var res = {};
-				var xhr = new XMLHttpRequest();
-				xhr.open("GET", "./examples/splash.xtpl", false);
-				xhr.send(null);
-
-				xtpl.utils.each(xhr.responseText.split('----- '), function (code){
-					var name;
-					code = code.replace(/^(.*?) -----/, function (_, val){ name = val; return '' });
-					res[name] = { xtpl: code.trim() };
-				});
-				return	res;
-			})();
-
-
-			// Animation
-			ctx.$delay(function (){
-				ctx.$set('showH1', true);
-				xtpl.utils.each(['hello', 'counter', 'list', 'todos'], function (name, i){
-					ctx.$delay(function (){
-						ctx.examples[name].show = true;
-					}, 200 * (i + 1));
-				});
-			});
-		});
-
-
 		xtpl.ctrl('list', function (ctx){
 			// New item model
 			ctx.newItem = '';
@@ -283,8 +443,9 @@
 
 		xtpl.ctrl('todos', function (ctx){
 			ctx.todos = [
-				{text: 'learn angular', done: true},
-				{text: 'build an angular app', done: false}
+				{text: 'visit xtpl.ru', done: true},
+				{text: 'learn xtpl', done: false},
+				{text: 'have fun', done: false}
 			];
 
 			ctx.addTodo = function (){
