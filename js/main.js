@@ -9,7 +9,8 @@
 					return val.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 				})
 				.replace(/(".*?")/g, '<span class="code-str">$1</span>')
-				.replace(/((?:^\s*| > | = ))(\w+)([.\s#[])/g, '$1<span class="code-node">$2</span>$3')
+				.replace(/((?:^\s*| > | = ))(\w+)([\.\s#[])/g, '$1<span class="code-node">$2</span>$3')
+				.replace(/ > (\w+)/g, ' > <span class="code-node">$1</span>')
 				.replace(/(&\w+\s)/, '<span class="code-decl">$1</span>')
 				.replace(/(#\w+)/, '<span class="code-id">$1</span>')
 				.replace(/((?:^\s*|>)\.)([.\w-]+)/g, '$1<span class="code-class">$2</span>')
@@ -19,6 +20,7 @@
 				.replace(/\t/g, '&nbsp; &nbsp;')
 				.replace(/\s{2}/g, '&nbsp; &nbsp;')
 				.replace(/(\/\/[^$]+)/, '<span class="code-comment">$1</span>')
+				.replace(/(>|\s)(if|else|for|in)(\s|<)/g, '$1<span class="code-keyword">$2</span>$3')
 			;
 		}).join('\n');
 	});
