@@ -83,12 +83,12 @@ if ctx.name {
 	h3 | Good day, {{ctx.name}}!
 
 	.btn.btn-warning {
-		x-click: delete ctx.name;
+		x-tap: delete ctx.name;
 		| Logout
 	}
 } else {
 	.btn.btn-primary {
-		x-click: ctx.name = prompt("Name:");
+		x-tap: ctx.name = prompt("Name:");
 		| Sing in
 	}
 }
@@ -166,7 +166,7 @@ for (idx, text) in ctx.list {
 ## Counter
 ```xtpl
 input.btn.btn-success.xlarge[type="button"] {
-	x-click: ctx.counter++;
+	x-tap: ctx.counter++;
 	value: ctx.counter || "Click me"
 }
 ```
@@ -188,7 +188,7 @@ form {
 ul.nav.nav-pills.nav-stacked {
 	for item in ctx.items {
 		li {
-			x-click: ctx.selectedItem = item;
+			x-tap: ctx.selectedItem = item;
 			class: { active: item === ctx.selectedItem }
 			a[href="#"] | {{item}}
 		}
@@ -198,14 +198,14 @@ ul.nav.nav-pills.nav-stacked {
 // Sorting
 div {
 	button.btn.btn-small {
-		x-click: ctx.sortItems(ctx.SORT_ASC);
+		x-tap: ctx.sortItems(ctx.SORT_ASC);
 		| asc
 	}
 
 	| &nbsp; &nbsp;
 
 	button.btn.btn-small {
-		x-click: ctx.sortItems(ctx.SORT_DESC);
+		x-tap: ctx.sortItems(ctx.SORT_DESC);
 		| desc
 	}
 }
@@ -220,7 +220,7 @@ div {
 	span | {{ctx.remaining()}} of {{ctx.todos.length}} remaining [&nbsp;
 
 	a[href=""] {
-		x-click: ctx.archive()
+		x-tap: ctx.archive()
 		| archive
 	}
 	| &nbsp;] |
