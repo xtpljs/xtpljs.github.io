@@ -73,7 +73,6 @@ ul.nav {
 	<li><a href="/about/">About</a></li>
 	<li><a href="/sitemap/">Sitemap</a></li>
 </ul>
-
 ```
 
 
