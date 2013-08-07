@@ -21,54 +21,105 @@
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 
 	<style>
-/* Tomorrow Night Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-.tomorrow-comment, pre .comment, pre .title {
-  color: #969896;
-}
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		.tomorrow-comment, pre .comment, pre .title {
+		  color: #8e908c;
+		}
 
-.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
-  color: #cc6666;
-}
+		.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+		  color: #c82829;
+		}
 
-.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
-  color: #de935f;
-}
+		.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+		  color: #f5871f;
+		}
 
-.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
-  color: #f0c674;
-}
+		.tomorrow-yellow, pre .ruby .class .title, pre .css .rules .attribute {
+		  color: #eab700;
+		}
 
-.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
-  color: #b5bd68;
-}
+		.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+		  color: #718c00;
+		}
 
-.tomorrow-aqua, pre .css .hexcolor {
-  color: #8abeb7;
-}
+		.tomorrow-aqua, pre .css .hexcolor {
+		  color: #3e999f;
+		}
 
-.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
-  color: #81a2be;
-}
+		.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+		  color: #4271ae;
+		}
 
-.tomorrow-purple, pre .keyword, pre .javascript .function {
-  color: #b294bb;
-}
+		.tomorrow-purple, pre .keyword, pre .javascript .function {
+		  color: #8959a8;
+		}
 
-pre code {
-  display: block;
-  font-family: Menlo, Monaco, Consolas, monospace;
-  line-height: 1.5;
-}
-	</style>
+		pre code {
+		  display: block;
+		  background: white;
+		  color: #4d4d4c;
+		  padding: 0.5em;
+		}
+
+		pre .coffeescript .javascript,
+		pre .javascript .xml,
+		pre .tex .formula,
+		pre .xml .javascript,
+		pre .xml .vbscript,
+		pre .xml .css,
+		pre .xml .cdata {
+		  opacity: 0.5;
+		}
 
 
 
+		/* Tomorrow Night Theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		.dark .tomorrow-comment, .dark pre .comment, .dark pre .title {
+		  color: #969896;
+		}
+
+		.dark .tomorrow-red, .dark pre .variable, .dark pre .attribute, .dark pre .tag, .dark pre .regexp, .dark pre .ruby .constant, .dark pre .xml .tag .title, .dark pre .xml .pi, .dark pre .xml .doctype, .dark pre .html .doctype, .dark pre .css .id, .dark pre .css .class, .dark pre .css .pseudo {
+		  color: #cc6666;
+		}
+
+		.dark .tomorrow-orange, .dark pre .number, .dark pre .preprocessor, .dark pre .built_in, .dark pre .literal, .dark pre .params, .dark pre .constant {
+		  color: #de935f;
+		}
+
+		.dark .tomorrow-yellow, .dark pre .class, .dark pre .ruby .class .title, .dark pre .css .rules .attribute {
+		  color: #f0c674;
+		}
+
+		.dark .tomorrow-green, .dark pre .string, .dark pre .value, .dark pre .inheritance, .dark pre .header, .dark pre .ruby .symbol, .dark pre .xml .cdata {
+		  color: #b5bd68;
+		}
+
+		.dark .tomorrow-aqua, .dark .dark pre .css .hexcolor {
+		  color: #8abeb7;
+		}
+
+		.dark .tomorrow-blue, .dark pre .function, .dark pre .python .decorator, .dark pre .python .title, .dark pre .ruby .function .title, .dark pre .ruby .title .keyword, .dark pre .perl .sub, .dark pre .javascript .title, .dark pre .coffeescript .title {
+		  color: #81a2be;
+		}
+
+		.dark .tomorrow-purple, .dark pre .keyword, .dark pre .javascript .function {
+		  color: #b294bb;
+		}
+
+		.dark pre code {
+		  display: block;
+		  font-family: Menlo, Monaco, Consolas, monospace;
+		  line-height: 1.5;
+		}
 
 
-	<style>
+
+		/**
+		 * MAIN
+		 */
 		body, html {
 			padding: 0;
 			margin: 0;
@@ -177,6 +228,71 @@ pre code {
 			padding: 15px 30px;
 		}
 
+		.fx-el {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transition: 0.6s;
+			-moz-transform-style: preserve-3d;
+		}
+
+		.fx-flip {
+			-webkit-perspective: 1000px;
+			-moz-perspective: 1000px;
+			position: relative;
+		}
+			.fx-flip_vertical {
+				-webkit-transform-origin: 50% 100%;
+				-moz-transform-origin: 50% 100%;
+			}
+				.fx-flip_yes .fx-el {
+					-webkit-transform: rotateX(-180deg);
+					-moz-transform: rotateX(-180deg);
+				}
+
+			.fx-flip__front, .fx-flip__back {
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+
+			.fx-flip__back {
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				position: absolute;
+			}
+
+			.fx-flip_vertical .fx-flip__back {
+				-webkit-transform: rotateX(-180deg);
+				-moz-transform: rotateX(-180deg);
+			}
+
+
+		.code {
+			position: relative;
+		}
+			.code-switch {
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				border-top: 1px solid #f07a0b;
+				background-color: #f5871f;
+				top: -1px;
+				color: #FFFFFF;
+				cursor: pointer;
+				font-family: Trebuchet MS;
+				font-size: 14px;
+				padding: 0 3px;
+				position: absolute;
+				right: 15px;
+				border-radius: 0 0 4px 4px;
+				box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    		}
+    		.fx-flip__back .code-switch {
+    			border-top: 1px solid #a784b1;
+    			background-color: #b294bb;
+    		}
+
 		.code-id { color: #f5871f; }
 		.code-node { color: #4271ae; }
 		.code-decl { color: #c82829 }
@@ -280,6 +396,32 @@ pre code {
 					v-hidden: ctx.page != "/"
 				}
 
+				// Flip example
+				&flip-example = .fx-flip.fx-flip_vertical {
+					class: { fx-flip_yes: ctx.flipped }
+
+					.code.fx-el {
+						.fx-flip__front {
+							pre > code | {* ctx.example.xtpl | xcode *}
+							.code-switch {
+								x-tap: ctx.flipped = true;
+								| JS
+							}
+						}
+						.fx-flip__back {
+							div {
+								data-type: "js"
+								x-highlight: ctx.example.js
+							}
+							.code-switch {
+								x-tap: ctx.flipped = false;
+								| xtpl
+							}
+						}
+					}
+				}
+
+
 				// Page content
 				.content {
 					h1 {
@@ -294,6 +436,7 @@ pre code {
 						.col-lg-7.code {
 							pre > code | {* ctx.readme["Hello"].xtpl | xcode *}
 						}
+
 						.col-lg-5.preview { x-eval: ctx.readme["Hello"].xtpl }
 					}
 
@@ -301,9 +444,11 @@ pre code {
 					.row.example {
 						class: { show: ctx.readme["Counter"].show; }
 
-						.col-lg-7.code {
-							pre > code | {* ctx.readme["Counter"].xtpl | xcode *}
+						.col-lg-7 > &flip-example {
+							x-flipped: ctx.countersFlipped
+							x-example: ctx.readme["Counter"]
 						}
+
 						.col-lg-5.preview[style="text-align: center"] > .well {
 							x-eval: ctx.readme["Counter"].xtpl
 						}
@@ -313,9 +458,11 @@ pre code {
 					.row.example {
 						class: { show: ctx.readme["List"].show; }
 
-						.col-lg-7.code {
-							pre > code | {* ctx.readme["List"].xtpl | xcode *}
+						.col-lg-7 > &flip-example {
+							x-flipped: ctx.listFlipped
+							x-example: ctx.readme["List"]
 						}
+
 						.col-lg-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.readme["List"].xtpl }
 					}
 
@@ -323,9 +470,11 @@ pre code {
 					.row.example {
 						class: { show: ctx.readme["Todos"].show; }
 
-						.col-lg-7.code {
-							pre > code | {* ctx.readme["Todos"].xtpl | xcode *}
+						.col-lg-7 > &flip-example {
+							x-flipped: ctx.todosFlipped
+							x-example: ctx.readme["Todos"]
 						}
+
 						.col-lg-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.readme["Todos"].xtpl }
 					}
 				}
@@ -412,74 +561,6 @@ pre code {
 
 	<script src="/js/xtpl.min.js"></script>
 	<script src="./js/main.js"></script>
-
-	<script>
-		xtpl.ctrl('list', function (ctx){
-			// New item model
-			ctx.newItem = '';
-
-			// Default items
-			ctx.items = ['Alpha', 'Beta', 'Gamma'];
-
-			// Active item index in items
-			ctx.activeIdx = 0;
-
-			// Add to items
-			ctx.addItem = function (){
-				if( ctx.newItem.length > 0 ){
-					ctx.items.push(ctx.newItem);
-					ctx.newItem = '';
-				}
-			};
-
-			// @const
-			ctx.SORT_ASC = function (a, b){
-				return	a == b ? 0 : (a > b ? 1 : -1);
-			};
-
-			// @const
-			ctx.SORT_DESC = function (a, b){
-				return	a == b ? 0 : (a > b ? -1 : 1);
-			};
-
-			// Sort items by type
-			ctx.sortItems = function (fn){
-				ctx.items.sort(fn);
-			};
-		});
-
-
-		xtpl.ctrl('todos', function (ctx){
-			ctx.todos = [
-				{text: 'visit xtpl.ru', done: true},
-				{text: 'learn xtpl', done: false},
-				{text: 'have fun', done: false}
-			];
-
-			ctx.addTodo = function (){
-				ctx.todos.push({text: ctx.todoText, done: false});
-				ctx.todoText = '';
-			};
-
-			ctx.remaining = function (){
-				var count = 0;
-				xtpl.each(ctx.todos, function (todo){
-					count += todo.done ? 0 : 1;
-				});
-				return count;
-			};
-
-			ctx.archive = function (){
-				var oldTodos = ctx.todos;
-				ctx.todos = [];
-				xtpl.each(oldTodos, function (todo){
-					if( !todo.done ) ctx.todos.push(todo);
-				});
-			};
-
-			return	ctx;
-		});
-	</script>
 
 
 	<script>

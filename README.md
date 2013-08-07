@@ -169,6 +169,11 @@ input.btn.btn-success.xlarge[type="button"] {
 	value: ctx.counter || "Click me"
 }
 ```
+```js
+xtpl.ctrl('main', function (ctx){
+	ctx.counter = 0;
+});
+```
 
 
 
@@ -209,6 +214,42 @@ div {
 	}
 }
 ```
+```js
+xtpl.ctrl('list', function (ctx){
+	// New item model
+	ctx.newItem = '';
+
+	// Default items
+	ctx.items = ['Alpha', 'Beta', 'Gamma'];
+
+	// Active item index in items
+	ctx.activeIdx = 0;
+
+	// Add to items
+	ctx.addItem = function (){
+		if( ctx.newItem.length > 0 ){
+			ctx.items.push(ctx.newItem);
+			ctx.newItem = '';
+		}
+	};
+
+	// @const
+	ctx.SORT_ASC = function (a, b){
+		return	a == b ? 0 : (a > b ? 1 : -1);
+	};
+
+	// @const
+	ctx.SORT_DESC = function (a, b){
+		return	a == b ? 0 : (a > b ? -1 : 1);
+	};
+
+	// Sort items by type
+	ctx.sortItems = function (fn){
+		ctx.items.sort(fn);
+	};
+});
+```
+
 
 
 
@@ -247,4 +288,36 @@ div {
 		}
 	}
 }
+```
+```js
+xtpl.ctrl('todos', function (ctx){
+	ctx.todos = [
+		{text: 'visit xtpl.ru', done: true},
+		{text: 'learn xtpl', done: false},
+		{text: 'have fun', done: false}
+	];
+
+	ctx.addTodo = function (){
+		ctx.todos.push({text: ctx.todoText, done: false});
+		ctx.todoText = '';
+	};
+
+	ctx.remaining = function (){
+		var count = 0;
+		xtpl.each(ctx.todos, function (todo){
+			count += todo.done ? 0 : 1;
+		});
+		return count;
+	};
+
+	ctx.archive = function (){
+		var oldTodos = ctx.todos;
+		ctx.todos = [];
+		xtpl.each(oldTodos, function (todo){
+			if( !todo.done ) ctx.todos.push(todo);
+		});
+	};
+
+	return	ctx;
+});
 ```

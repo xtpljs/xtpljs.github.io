@@ -54,6 +54,30 @@
 	}
 
 
+	// Load readme
+	var readmeJSON = (function (){
+		var readme = {};
+		xtpl.utils.each(xtpl.utils.readFile('./README.md?rev=2013-08-07').split('## '), function (block){
+			block = block.trim();
+
+			var pos = block.indexOf("\n");
+			var name = block.substr(0, pos);
+			var regexp = /```(\w+)([\s\S]*?)```/g, match;
+
+			readme[name] = { name: name };
+
+			while( match = regexp.exec(block) ){
+				readme[name][match[1]] = match[2].trim();
+			}
+		});
+		return	readme;
+	})();
+
+	// Eval code
+	(new Function(readmeJSON['List'].js))();
+	(new Function(readmeJSON['Todos'].js))();
+
+
 	xtpl.ctrl('main', function (ctx){
 		$(document).on('click', 'a', function (evt){
 			var hash = evt.currentTarget.hash;
@@ -79,27 +103,10 @@
 
 
 		ctx.counter = 0;
+		ctx.readme = readmeJSON;
 
 
-		// Load readme
-		ctx.readme = (function (){
-			var readme = {};
-			xtpl.utils.each(xtpl.utils.readFile('./README.md').split('## '), function (block){
-				block = block.trim();
-
-				var pos = block.indexOf("\n");
-				var name = block.substr(0, pos);
-				var regexp = /```(\w+)([\s\S]*?)```/g, match;
-
-				readme[name] = { name: name };
-
-				while( match = regexp.exec(block) ){
-					readme[name][match[1]] = match[2].trim();
-				}
-			});
-			return	readme;
-		})();
-
+//		console.log(ctx.readme);
 
 		ctx.each_nav = [{ href: "#!/", text: "Splash" }, { href: "#!/api/", text: "Docs" }];
 		ctx.each_list = ["Alpha", "Beta", "Gamma"];
