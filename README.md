@@ -192,8 +192,8 @@ form {
 ul.nav.nav-pills.nav-stacked {
 	for item in ctx.items {
 		li {
-			x-tap: ctx.selectedItem = item;
-			class: { active: item === ctx.selectedItem }
+			x-tap: ctx.activeItem = item;
+			class: { active: item === ctx.activeItem }
 			a[href="#"] | {{item}}
 		}
 	}
@@ -223,7 +223,7 @@ xtpl.ctrl('list', function (ctx){
 	ctx.items = ['Alpha', 'Beta', 'Gamma'];
 
 	// Active item index in items
-	ctx.activeIdx = 0;
+	ctx.activeItem = null;
 
 	// Add to items
 	ctx.addItem = function (){

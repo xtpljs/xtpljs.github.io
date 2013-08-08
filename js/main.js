@@ -79,6 +79,11 @@
 	(new Function(readmeJSON['Todos'].js))();
 
 
+	// :[
+	readmeJSON['List'].js = readmeJSON['List'].js.replace('list', 'main');
+	readmeJSON['Todos'].js = readmeJSON['Todos'].js.replace('todos', 'main');
+
+
 	xtpl.ctrl('main', function (ctx){
 		$(document).on('click', 'a', function (evt){
 			var hash = evt.currentTarget.hash;
