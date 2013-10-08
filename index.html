@@ -442,47 +442,47 @@
 					.row.example {
 						class: { show: ctx.readme["Hello"].show; }
 
-						.col-lg-7.code {
+						.col-md-7.code {
 							pre > code | {* ctx.readme["Hello"].xtpl | xcode *}
 						}
 
-						.col-lg-5.preview { x-eval: ctx.readme["Hello"].xtpl }
+						.col-md-5.preview { x-eval: ctx.readme["Hello"].xtpl }
 					}
 
 					// "Counter"
 					.row.example {
 						class: { show: ctx.readme["Counter"].show; }
 
-						.col-lg-7 > &flip-example {
+						.col-md-7 > &flip-example {
 							x-flipped: ctx.countersFlipped
 							x-example: ctx.readme["Counter"]
 						}
 
-						.col-lg-5.preview[style="text-align: center"] > .well { x-eval: ctx.readme["Counter"].xtpl }
+						.col-md-5.preview[style="text-align: center"] > .well { x-eval: ctx.readme["Counter"].xtpl }
 					}
 
 					// "List"
 					.row.example {
 						class: { show: ctx.readme["List"].show; }
 
-						.col-lg-7 > &flip-example {
+						.col-md-7 > &flip-example {
 							x-flipped: ctx.listFlipped
 							x-example: ctx.readme["List"]
 						}
 
-						.col-lg-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.readme["List"].xtpl }
+						.col-md-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.readme["List"].xtpl }
 					}
 
 					// "Todos app"
 					.row.example {
 						class: { show: ctx.readme["Todos"].show; }
 
-						.col-lg-7 > &flip-example {
+						.col-md-7 > &flip-example {
 							x-flipped: ctx.todosFlipped
 							x-example: ctx.readme["Todos"]
 						}
 
-						.col-lg-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.readme["Todos"].xtpl }
+						.col-md-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.readme["Todos"].xtpl }
 					}
 				}
 
@@ -500,11 +500,11 @@
 					}
 				}
 				else {
-					.col-lg-7 > pre {
+					.col-md-7 > pre {
 						code | {*ctx.code.xtpl | xcode*}
 					}
 
-					.col-lg-5 {
+					.col-md-5 {
 						if ctx.output == "xml" {
 							div {
 								data-type: "xml"

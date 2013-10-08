@@ -3,6 +3,10 @@
 
 
 	xtpl.mod('xcode', function (code){
+		if( !code ){
+			console.log(code);
+		}
+
 		return xtpl.utils.map(code.split('\n'), function (line, i){
 			return line
 				.replace(/(\|[^$]+)/, function (_, val){
