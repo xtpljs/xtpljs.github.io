@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+    <id>ru.xtpl.plugin.lang</id>
+    <name>xtpl lang</name>
+    <version>0.2</version>
+    <vendor email="ibn@rubaxa.org" url="http://github.com/rubaxa/">RubaXa</vendor>
+
+    <description><![CDATA[
+      <a href="http://xtpl.ru">xtpl</a> — JavaScript/NodeJS template engine
+    ]]></description>
+
+    <change-notes><![CDATA[
+
+    ]]></change-notes>
+
+    <idea-version since-build="9000"/>
+    <depends>com.intellij.modules.xml</depends>
+
+    <application-components>
+        <component>
+            <implementation-class>ru.xtplplugin.xtplLoader</implementation-class>
+        </component>
+    </application-components>
+
+    <project-components>
+    </project-components>
+
+    <actions>
+    </actions>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="ru.xtplplugin.xtplFileTypeFactory"/>
+        <lang.parserDefinition language="xtpl" implementationClass="ru.xtplplugin.xtplParserDefinition"/>
+        <lang.syntaxHighlighterFactory key="xtpl" implementationClass="ru.xtplplugin.xtplSyntaxHighlighterFactory"/>
+        <completion.contributor language="xtpl" implementationClass="ru.xtplplugin.xtplCompletionContributor"/>
+        <colorSettingsPage implementation="ru.xtplplugin.xtplColorSettingsPage"/>
+    </extensions>
+</idea-plugin>
