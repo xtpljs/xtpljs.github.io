@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=.6"/>
 
-	<title>xtpl — больше, чем JavaScript шаблонизатор</title>
+	<title>xtpl — Simple. Easy. Quickly.</title>
 
 	<meta name="keywords"
 		  content="xtpl, javascript, template, nodejs, browser, server, client, binding, data-binding, MVVM, rubaxa"/>
@@ -13,249 +14,570 @@
 		  content="xtpl — JavaScript шаблонизатор нового поколения, работает как на клиенте, так и сервере.
 		           Позволяет связывать данные с шаблоном и многое другое."/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="./static/css/bootstrap-responsive.css"/>
-	<link rel="stylesheet" href="./static/css/google-code-prettify.css"/>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="//mailru.github.com/FileAPI/FileAPI.min.js"></script>
+	<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="http://glyphicons.getbootstrap.com/css/bootstrap-glyphicons.css" />
 
-	<script src="./js/xtpl.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 
 	<style>
-		#example {
-			width: 75%;
-			margin: 0 auto 40px;
-			padding: 20px;
-			box-shadow: 0 0 5px rgba(0,0,0,.45);
-			border-radius: 5px;
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		.tomorrow-comment, pre .comment, pre .title {
+		  color: #8e908c;
 		}
 
-			#example .api li {
-				line-height: 145%;
-				padding-bottom: 8px;
+		.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+		  color: #c82829;
+		}
+
+		.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+		  color: #f5871f;
+		}
+
+		.tomorrow-yellow, pre .ruby .class .title, pre .css .rules .attribute {
+		  color: #eab700;
+		}
+
+		.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+		  color: #718c00;
+		}
+
+		.tomorrow-aqua, pre .css .hexcolor {
+		  color: #3e999f;
+		}
+
+		.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+		  color: #4271ae;
+		}
+
+		.tomorrow-purple, pre .keyword, pre .javascript .function {
+		  color: #8959a8;
+		}
+
+		pre code {
+		  display: block;
+		  background: white;
+		  color: #4d4d4c;
+		  padding: 0.5em;
+		}
+
+		pre .coffeescript .javascript,
+		pre .javascript .xml,
+		pre .tex .formula,
+		pre .xml .javascript,
+		pre .xml .vbscript,
+		pre .xml .css,
+		pre .xml .cdata {
+		  opacity: 0.5;
+		}
+
+
+
+		/* Tomorrow Night Theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		.dark .tomorrow-comment, .dark pre .comment, .dark pre .title {
+		  color: #969896;
+		}
+
+		.dark .tomorrow-red, .dark pre .variable, .dark pre .attribute, .dark pre .tag, .dark pre .regexp, .dark pre .ruby .constant, .dark pre .xml .tag .title, .dark pre .xml .pi, .dark pre .xml .doctype, .dark pre .html .doctype, .dark pre .css .id, .dark pre .css .class, .dark pre .css .pseudo {
+		  color: #cc6666;
+		}
+
+		.dark .tomorrow-orange, .dark pre .number, .dark pre .preprocessor, .dark pre .built_in, .dark pre .literal, .dark pre .params, .dark pre .constant {
+		  color: #de935f;
+		}
+
+		.dark .tomorrow-yellow, .dark pre .class, .dark pre .ruby .class .title, .dark pre .css .rules .attribute {
+		  color: #f0c674;
+		}
+
+		.dark .tomorrow-green, .dark pre .string, .dark pre .value, .dark pre .inheritance, .dark pre .header, .dark pre .ruby .symbol, .dark pre .xml .cdata {
+		  color: #b5bd68;
+		}
+
+		.dark .tomorrow-aqua, .dark .dark pre .css .hexcolor {
+		  color: #8abeb7;
+		}
+
+		.dark .tomorrow-blue, .dark pre .function, .dark pre .python .decorator, .dark pre .python .title, .dark pre .ruby .function .title, .dark pre .ruby .title .keyword, .dark pre .perl .sub, .dark pre .javascript .title, .dark pre .coffeescript .title {
+		  color: #81a2be;
+		}
+
+		.dark .tomorrow-purple, .dark pre .keyword, .dark pre .javascript .function {
+		  color: #b294bb;
+		}
+
+		.dark pre code {
+		  display: block;
+		  font-family: Menlo, Monaco, Consolas, monospace;
+		  line-height: 1.5;
+		}
+
+
+
+		/**
+		 * MAIN
+		 */
+		body, html {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			min-width: 320px;
+		}
+			.content {
+				max-width: 1300px;
 			}
 
-		.tag { color: #A72078; }
+		.page {
+			-webkit-transition: background-color 1s ease-out;
+			-moz-transition: background-color 1s ease-out;
+			transition: background-color 1s ease-out;
+		}
+
+		.v-hidden {
+			visibility: hidden;
+		}
+
+		.page {
+			color: #383e4b;
+			background-color: #f5f5f5;
+		}
+
+		.page.dark {
+			color: #f5f5f5;
+			background-color: #383e4b;
+		}
+
+
+		h1 {
+			padding: 130px 0;
+			margin: 0;
+			text-align: center;
+			font-size: 100px;
+			font-family: 'Wire One', sans-serif;
+			opacity: 0;
+		}
+
+		h2 {
+			font-family: 'Wire One', sans-serif;
+			font-size: 50px;
+		}
+
+		h3 {
+			font-family: 'Wire One', sans-serif;
+			font-size: 35px;
+			margin: 0 0 15px;
+		}
+
+		#sidebar-left {
+			color: #fff;
+			height: 100%;
+			position: absolute;
+			font-size: 14px;
+			font-family: Lato, sans-serif;
+			background-color: rgb(56, 62, 75);
+		}
+			#sidebar-left a {
+				color: #fff;
+				border: 0;
+				border-radius: 0;
+				background-color: transparent;
+			}
+				#sidebar-left a:hover,
+				#sidebar-left .active a {
+					background-color: rgb(45, 50, 61);
+				}
+
+
+		.content {
+			width: 85%;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		@media only screen and (max-width : 600px) {
+			.content {
+				width: 100%;
+				padding: 10px;
+			}
+		}
+
+		pre {
+			border: none;
+			padding: 0;
+			background: none;
+		}
+
+		.well, pre code {
+			border: 0;
+			padding: 15px 20px;
+			border-radius: 3px;
+			box-shadow: 0 1px 0 1px rgba(0,0,0,.1);
+			background-color: #fff;
+			max-height: 300px;
+			overflow: auto;
+		}
+			.dark .well,
+			.dark pre code {
+				color: #c5c8c6;
+				background: rgba(29,31,33,.6);
+				box-shadow: 0 1px 0 1px rgba(0,0,0,.4);
+			}
+
+
+
+		.btn.xlarge {
+			font-size: 30px;
+			padding: 15px 30px;
+		}
+
+		.fx-el {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transition: 0.6s;
+			-moz-transform-style: preserve-3d;
+		}
+
+		.fx-flip {
+			-webkit-perspective: 1000px;
+			-moz-perspective: 1000px;
+			position: relative;
+			z-index: 100;
+		}
+			.fx-flip_vertical {
+				-webkit-transform-origin: 50% 100%;
+				-moz-transform-origin: 50% 100%;
+			}
+				.fx-flip_yes .fx-el {
+					-webkit-transform: rotateX(-180deg);
+					-moz-transform: rotateX(-180deg);
+				}
+
+			.fx-flip__front, .fx-flip__back {
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+
+			.fx-flip__back {
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				position: absolute;
+			}
+
+			.fx-flip_vertical .fx-flip__back {
+				-webkit-transform: rotateX(-180deg);
+				-moz-transform: rotateX(-180deg);
+			}
+
+
+		.code {
+			position: relative;
+		}
+			.code-switch {
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				border-top: 1px solid #f07a0b;
+				background-color: #f5871f;
+				top: -1px;
+				color: #FFFFFF;
+				cursor: pointer;
+				font-family: Trebuchet MS;
+				font-size: 14px;
+				padding: 0 3px;
+				position: absolute;
+				right: 15px;
+				border-radius: 0 0 4px 4px;
+				box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    		}
+    		.fx-flip__back .code-switch {
+    			border-top: 1px solid #a784b1;
+    			background-color: #b294bb;
+    		}
+
+		.code-id { color: #f5871f; }
+		.code-node { color: #4271ae; }
+		.code-decl { color: #c82829 }
+
+		.code-str,
+		.code-class { color: #080; }
+
+		.code-prop,
+		.code-xprop { color: #8959a8; }
+		.code-xprop { font-style: italic; }
+
+		.code-comment { color: #999; }
+
+
+		.dark .code-id { color: #f0c674; }
+		.dark .code-node { color: #81a2be; }
+		.dark .code-decl { color: #cc6666; }
+		.dark .code-keyword { color: #8abeb7; }
+
+		.dark .code-prop,
+		.dark .code-xprop { color: #b294bb; }
+
+		.dark .code-comment { color: #969896; }
+
+		.dark .code-str,
+		.dark .code-class { color: #b5bd68; }
+
+		.done-true {
+			text-decoration: line-through;
+		}
+
+		.example {
+			margin-top: 30px;
+		}
+			.example .list .nav {
+				padding: 10px 0;
+			}
+
+			.example .todoapp input {
+				vertical-align: top;
+				margin-right: 10px;
+			}
+
+		.teach-me {
+			padding: 150px 0 180px;
+			text-align: center;
+		}
+			.teach-me a {
+				font-size: 100px;
+				font-family: 'Wire One', sans-serif;
+			}
+
+
+		#main {
+			-webkit-transition: all 1s ease-in;
+			-moz-transition: all 1s ease-in;
+			transition: all 1s ease-in;
+		}
+
+		.example .code,
+		.example .preview {
+			top: 10px;
+			opacity: 0;
+			position: relative;
+			-webkit-transition: all .6s ease-out;
+			-moz-transition: all .6s ease-out;
+			transition: all .6s ease-out;
+		}
+			.example .preview {
+			 	-webkit-transition-delay: .2s;
+			 	-moz-transition-delay: .2s;
+			}
+
+			.example.show .code,
+			.example.show .preview {
+				top: 0;
+				opacity: 1;
+			}
+
+		.glyphicon {
+			margin-left: 5px;
+			vertical-align: middle;
+		}
+		.confirm .btn {
+			margin-right: 20px;
+		}
 	</style>
-	<link href="./example/shop/shop.css" rel="stylesheet"/>
-	<link href="./example/uploader/uploader.css" rel="stylesheet"/>
 </head>
-<body style="margin: 0; padding: 0;">
-	<x:tpl ctrl="site">
-		<div class="container" style="xdisplay: none; margin-top: 20px;">
-			<div class="row-fluid">
-				<div class="span3">
-					<ul class="nav nav-list well" x:each="item in ctx.examples">
-						<li x:class="{ active: item == ctx.example }" x:click="ctx.selectExample(item);">
-							<a href="#!{{item.files[0]}}">{{item.name}}</a>
-						</li>
-					</ul>
+<body>
+	<script x-ctrl="main" type="text/xtpl">
+		a[name="index"] {}
+
+		.page {
+			class: {
+				dark: ctx.page != "/"
+			}
+
+			// Main Page
+			.splash {
+				class: {
+					v-hidden: ctx.page != "/"
+				}
+
+				// Flip example
+				&flip-example = .fx-flip.fx-flip_vertical {
+					class: { fx-flip_yes: ctx.flipped }
+
+					.code.fx-el {
+						.fx-flip__front {
+							pre > code | {* ctx.example.xtpl | xcode *}
+							.code-switch {
+								x-tap: ctx.flipped = true;
+								| JS
+							}
+						}
+						.fx-flip__back {
+							div {
+								data-type: "js"
+								x-highlight: ctx.example.js
+							}
+							.code-switch {
+								x-tap: ctx.flipped = false;
+								| xtpl
+							}
+						}
+					}
+				}
 
 
-					<h3>api</h3>
-					<ul class="nav nav-list well" x:each="item in ctx.docs">
-						<li x:class="{ active: item == ctx.example }" x:click="ctx.selectExample(item);">
-							<a href="#!{{item.files[0]}}">{{item.name}}</a>
-						</li>
-					</ul>
-				</div>
+				// Page content
+				.content {
+					h1 {
+						x-fade-to: ctx.showH1
+						| Simple. Easy. Quickly.
+					}
 
-				<div class="span9" style="position: relative;">
-					<div x:visible="ctx.loading" style="font-size: 200%;">Loading...</div>
-					<div x:visible="!ctx.loading">
-						<x:if bind="ctx.example.descr">
-							<h2>{{ctx.example.name}}</h2>
-							<div id="descr"><x:v bind="true" output="text">ctx.example.descr</x:v></div>
-							<br/>
-						</x:if>
+					// "Hello"
+					.row.example {
+						class: { show: ctx.readme["Hello"].show; }
 
-						<div id="example"></div>
+						.col-md-7.code {
+							pre > code | {* ctx.readme["Hello"].xtpl | xcode *}
+						}
 
-						<ul class="nav nav-tabs" x:each="tab in ctx.example.files">
-							<li x:class="{ active: ctx.tab == tab }">
-								<a href="#" x:click="ctx.selectTab(tab)">{{tab.split('/').pop()}}</a>
-							</li>
-						</ul>
+						.col-md-5.preview { x-eval: ctx.readme["Hello"].xtpl }
+					}
 
-						<div id="editor" style="width: 100%; height: 500px;">console.log(1);</div>
-						<div style="height: 550px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</x:tpl>
+					// "Counter"
+					.row.example {
+						class: { show: ctx.readme["Counter"].show; }
+
+						.col-md-7 > &flip-example {
+							x-flipped: ctx.countersFlipped
+							x-example: ctx.readme["Counter"]
+						}
+
+						.col-md-5.preview[style="text-align: center"] > .well { x-eval: ctx.readme["Counter"].xtpl }
+					}
+
+					// "List"
+					.row.example {
+						class: { show: ctx.readme["List"].show; }
+
+						.col-md-7 > &flip-example {
+							x-flipped: ctx.listFlipped
+							x-example: ctx.readme["List"]
+						}
+
+						.col-md-5.list.preview[x-ctrl="list"] > .well { x-eval: ctx.readme["List"].xtpl }
+					}
+
+					// "Todos app"
+					.row.example {
+						class: { show: ctx.readme["Todos"].show; }
+
+						.col-md-7 > &flip-example {
+							x-flipped: ctx.todosFlipped
+							x-example: ctx.readme["Todos"]
+						}
+
+						.col-md-5.todoapp.preview[x-ctrl="todos"] > .well { x-eval: ctx.readme["Todos"].xtpl }
+					}
+				}
+
+				.teach-me > a[href="#!/api/"] | Shut up and teach me!
+			}
 
 
-	<script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" charset="utf-8"></script>
+			&doc-item = div.row {
+				h2 | {{ctx.code.name}}
+
+				if ctx.type == "html" {
+					div.col-12 {
+						data-type: "html"
+						x-highlight: ctx.code.html
+					}
+				}
+				else {
+					.col-md-7 > pre {
+						code | {*ctx.code.xtpl | xcode*}
+					}
+
+					.col-md-5 {
+						if ctx.output == "xml" {
+							div {
+								data-type: "xml"
+								x-highlight: ctx.code.xml || __xmods.toXML(ctx.code.xtpl)
+							}
+						}
+						else {
+							.well { x-eval: ctx.code.xtpl + "\n|&nbsp;" }
+						}
+					}
+				}
+			}
+
+
+			// Documentation
+			.content {
+				x-show: ctx.page != "/"
+
+				a[name="api"] {}
+				h1[style="opacity:1"] | Getting started
+
+				&doc-item {
+					type: "html"
+					x-code: ctx.readme["xtpl boilerplate"]
+				}
+
+				&doc-item {
+					output: "xml"
+					x-code: ctx.readme["Create element"]
+				}
+
+				&doc-item {
+					output: "xml"
+					x-code: ctx.readme["Simple block"]
+				}
+
+				&doc-item {
+					x-name: ctx.if_else_name
+					x-code: ctx.readme["\"if else\" statement"]
+				}
+
+				&doc-item {
+					x-nav: ctx.each_nav
+					x-list: ctx.each_list
+					x-code: ctx.readme["Each"]
+				}
+
+				&doc-item {
+					x-code: ctx.readme["Tag declaration"]
+				}
+
+				div[style="height: 300px"] {}
+			}
+		}
+	</script>
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//yandex.st/highlightjs/7.2/highlight.min.js"></script>
+
+	<script src="/js/xtpl.min.js"></script>
+	<script src="./js/main.js"></script>
 
 
 	<script>
-		xtpl.ctrl('site', function (ctx){
-			var eceMode	= { js: 'javascript', css: 'css', html: 'html', xtpl: 'html' };
-
-			ctx.examples = [
-				  { name: 'Hello', files: ['example/hello/hello.xtpl'] }
-				, { name: 'Simple list', files: ['example/list/list.xtpl', 'example/list/list.js'] }
-				, { name: 'Shop cart', files: ['example/shop/shop.xtpl', 'example/shop/shop.js'] }
-				, { name: 'File uploader', files: ['example/uploader/uploader.xtpl', 'example/uploader/uploader.js'] }
-			];
-
-
-			ctx.docs = [
-				  { name: '<x:each/>, <any x:each/>', files: ['docs/each.html'] }
-				, { name: '<x:if/>, <any x:if/>', files: ['docs/if.html'] }
-				, { name: '<x:match/>', files: ['docs/match.html'] }
-				, { name: '<x:switch/>', files: ['docs/switch.html'] }
-				, { name: '<x:tag/>', files: ['docs/tag.html'] }
-				, { name: '<x:value/>, {{expression}}', files: ['docs/value.html'] }
-				, { name: '<x:value mod/>', files: ['docs/value.mod.html'] }
-				, { name: '@attribute', files: ['docs/attr.html'] }
-				, { name: '<any attr="{{expr}}"/>', files: ['docs/attr.expr.html'] }
-				, { name: '<any x:class/>', files: ['docs/x:class.html'] }
-				, { name: '<any x:tag-if/>', files: ['docs/x:tag-if.html'] }
-				, { name: '<input x:bind/>', files: ['docs/x:bind.html'] }
-				, { name: '<input x:disabled/>', files: ['docs/x:disabled.html'] }
-			];
-
-
-			ctx.selectExample = function (example){
-				ctx.example = example;
-				ctx.loading = true;
-				ctx.loadExample(example).done(function (){
-					ctx.loading = false;
-
-					var
-						  file = example.files[0]
-						, content = ctx.example.files[file]
-						, fn = xtpl.compile(file, { content: content })
-					;
-
-					$('#example').xtpl(fn, example.ctx = {});
-
-					ctx.selectTab(file);
-					location.hash = '!'+file;
-				});
-			};
-
-
-			ctx.loadExample = function (example){
-				if( !example.defer ){
-					var queue = [];
-
-					xtpl.utils.each(example.files, function (file){
-						queue.push($.get('./'+file+'?r=4', function (str){
-							if( ~example.files[0].indexOf('docs/') ){
-								var name = file.replace(/^.+\/(.+)\.[a-z]+$/, '$1');
-								example.files = [];
-
-								str = str.replace(/<x:(ctrl|tpl)>([\s\S]+)<\/x:\1>/g, function (_, node, content){
-									if( node == 'ctrl' ){
-										example.files[1] = name+'.js';
-										example.files[name+'.js']	= content = 'xtpl.ctrl("'+ name +'", function (ctx){\n'+ content +'\n});';
-										(new Function(content))();
-									} else {
-										example.files[0] = file;
-										example.files[file]	= '<x:tpl ctrl="'+ name +'">\n'+ content +'\n</x:tpl>';
-									}
-
-									return '';
-								});
-
-								example.descr = jQuery.trim(str).replace(/(&lt;.*?&gt;)/g, '<span class="tag">$1</span>');
-							} else {
-								example.files[file] = str;
-							}
-						}));
-					});
-
-					example.defer = $.when.apply($, queue).done(function (){
-						setTimeout(ctx.$apply);
-					});
-				}
-
-				return	example.defer;
-			};
-
-
-			ctx.selectTab = function (tab){
-				if( ctx.tab != tab ){
-					ctx.tab = tab;
-
-					ctx.setEditFile(tab);
-				}
-			};
-
-
-			ctx.setEditFile = function (file){
-				if( !ctx.editor ){
-					ctx.editor	= ace.edit("editor");
-					// Set ACE editor theme
-					ctx.editor.setTheme("ace/theme/chrome");
-
-					var pid;
-					ctx.editor.on('change', function (){
-						clearTimeout(pid);
-						pid = setTimeout(function (){
-							var
-								  file = ctx.editor.file
-								, content = ctx.editor.getValue()
-							;
-
-							if( ctx.example.files[file] == content ){
-								return
-							}
-
-							ctx.example.files[file] = content;
-
-							try {
-								ctx.example.ctx.$delay.clear();
-
-								if( /\.(xtpl|html)/.test(file) ){
-									var fn = xtpl.compile(file, { content: content });
-									$('#example').xtpl(fn, ctx.example.ctx);
-								}
-								else if( /\.js/.test(file) ){
-									var fn = (new Function('return '+content))();
-									fn(ctx.example.ctx);
-									ctx.example.ctx.$apply();
-								}
-							} catch (er){
-								console.log(er);
-							}
-						}, 1000);
-					});
-
-				}
-
-				try {
-					ctx.editor.file = file;
-					ctx.editor.getSession().setMode("ace/mode/" + eceMode[file.split('.').pop()]);
-					ctx.editor.getSession().setValue(ctx.example.files[file]);
-				} catch (e){}
-			};
-
-
-			// Startup :[
-			var file = location.toString().split('#!')[1] || ctx.examples[0].files[0];
-			if( ~file.indexOf('docs') ){
-				xtpl.utils.each(ctx.docs, function (item){
-					if( item.files[0] == file ){
-						ctx.selectExample(item);
-					}
-				});
-			}
-			else {
-				xtpl.utils.each(ctx.examples, function (item){
-					if( item.files[0] == file ){
-						ctx.selectExample(item);
-					}
-				});
-			}
-		});
+		// Google Analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-16483888-2', 'xtpl.ru');
+		ga('send', 'pageview');
 	</script>
 
 </body>
