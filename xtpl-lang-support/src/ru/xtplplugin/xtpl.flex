@@ -92,18 +92,18 @@ BOOL        = true|false|undefined|null
 NUMBER      = (0(x|X)[0-9a-fA-F]+)|(-?[0-9]+(\.[0-9]+)?(e[+\-]?[0-9]+)?)
 
 NODE_NAME   = {ALPHA}({ALPHA}|{DIGIT}|"-")*
-NODE_CLASS  = ({ALPHA}|"_")({ALPHA}|{DIGIT}|"-"|"_")*
-NODE_ATTR   = {ALPHA}({ALPHA}|{DIGIT}|"-"|"_")*
+NODE_CLASS  = ({ALPHA}|[_-]|\{\{[^\}]+\}\})+({ALPHA}|{DIGIT})*
+NODE_ATTR   = ({ALPHA}|[_-]|\{\{.*?\}\})+({ALPHA}|{DIGIT})*
 ID          = [#]({ALPHA}|[_-])*
 
-ATTR_NAME   = ['\"]?{NODE_ATTR}['\"]?{WS}*[:]
+ATTR_NAME   = ['\"]?"&"?{NODE_ATTR}['\"]?{WS}*[:]
 XATTR_NAME   = ['\"]?x-{ALPHA}({ALPHA}|{DIGIT}|"-"|"_")*['\"]?{WS}*[:]
 
 VAR_NAME    = [$_a-zA-Z][$_a-zA-Z0-9]*
 
 DECL            = &"{"?({ALPHA}({ALPHA}|{DIGIT}|"_"|"-"|".")*)"}"?
 SYSTEM          = else|include|default
-SYSTEM_EXPR     = if|for|switch|case
+SYSTEM_EXPR     = if|for|switch|case|bind|scope
 RESERVED        = typeof|void|in
 OPERATION_SIGN  = [?:&|/%*~!=<>+-]+
 
@@ -176,6 +176,7 @@ OPERATION_SIGN  = [?:&|/%*~!=<>+-]+
 
 // ~ NODE CLASSES ~
 <YYNODE_CLASS> {
+    "&"?            { return xtplToken.KEYWORD; }
     {NODE_CLASS}    { return xtplToken.ATTR_VALUE; }
     "."             { return xtplToken.DOT; }
     "["             { yybegin(YYNODE_ATTR); return xtplToken.BRACES; }

@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>ru.xtpl.plugin.lang</id>
     <name>xtpl lang</name>
-    <version>0.2</version>
+    <version>0.3.10</version>
     <vendor email="ibn@rubaxa.org" url="http://github.com/rubaxa/">RubaXa</vendor>
 
     <description><![CDATA[

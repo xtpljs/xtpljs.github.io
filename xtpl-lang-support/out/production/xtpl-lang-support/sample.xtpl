@@ -1,8 +1,0 @@
-// This xtpl comment
-div.btn.btn_active {
-    class: "name"
-    style: {
-        display: block
-        color: red
-    }
-}

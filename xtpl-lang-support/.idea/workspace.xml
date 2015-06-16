@@ -4,44 +4,8 @@
     <list default="true" id="f5430ff3-019c-4796-af2f-661f7ed392fe" name="Default" comment="" />
     <ignored path="xtpl-lang-support.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373531117392" ignored="false" />
-    <file path="/xtplLang.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373549508616" ignored="false" />
-    <file path="/xtplIcons.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373795364364" ignored="false" />
-    <file path="/xtplFileType.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373549870382" ignored="false" />
-    <file path="/plugin.xml" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1374212855238" ignored="false" />
-    <file path="/xtplFileTypeFactory.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373550297496" ignored="false" />
-    <file path="/Dummy.txt" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373553288818" ignored="false" />
-    <file path="$PROJECT_DIR$/../SimplePlugin/META-INF/plugin.xml" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373552584597" ignored="false" />
-    <file path="/a.dummy" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1382017486906" ignored="false" />
-    <file path="$PROJECT_DIR$/../SimplePlugin/.idea/workspace.xml" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373551757798" ignored="false" />
-    <file path="/fragment.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373723408771" ignored="false" />
-    <file path="/xtplParserDefinition.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373723547800" ignored="false" />
-    <file path="/xtplLexer.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373558274821" ignored="false" />
-    <file path="/sample.xtpl" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373559482931" ignored="false" />
-    <file path="/xtplTypes.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373568621990" ignored="false" />
-    <file path="/xtpl.flex" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1382018467809" ignored="false" />
-    <file path="/xtplSyntaxHighlighter.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1382017696314" ignored="false" />
-    <file path="/xtplLexerAdapter.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373572251977" ignored="false" />
-    <file path="/xtpl.bnf" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373569498977" ignored="false" />
-    <file path="/xtplTokenTypes.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731768712" ignored="false" />
-    <file path="/xtplParser.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373723113896" ignored="false" />
-    <file path="/xtplElementImpl.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373723438101" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/lang/lexer/coffee-script.flex" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/highlighter/CoffeeScriptSyntaxHighlighter.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/highlighter/CoffeeScriptCommenter.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/highlighter/CoffeeScriptColorSettingsPage.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/highlighter/CoffeeScriptBraceMatcher.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/lang/lexer/CoffeeScriptTokenSets.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/file/CoffeeScriptFileType.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/src/org/coffeebrew/lang/lexer/CoffeeScriptTokenTypes.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373731861627" ignored="false" />
-    <file path="$PROJECT_DIR$/../FestSupport/src/org/fest/lang/lexer/_FestLexer.flex.bak" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373733076021" ignored="false" />
-    <file path="$PROJECT_DIR$/../FestSupport/src/org/fest/lang/lexer/_FestLexer.flex" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373733079876" ignored="false" />
-    <file path="/xtplToken.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373743948672" ignored="false" />
-    <file path="/xtplCompletionContributor.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373795415082" ignored="false" />
-    <file path="/xtplLoader.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373802341578" ignored="false" />
-    <file path="$PROJECT_DIR$/../coffee-brew/META-INF/plugin.xml" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373804067082" ignored="false" />
-    <file path="/xtplColorSettingsPage.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1373806539712" ignored="false" />
-    <file path="/a.java" changelist="f5430ff3-019c-4796-af2f-661f7ed392fe" time="1382016766570" ignored="false" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +16,8 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -92,9 +53,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules />
-    <ui_properties />
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -102,98 +62,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="xtpl.flex" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="xtpl.flex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtpl.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="21" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.23076923">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
               <folding>
-                <marker date="1386596997000" expanded="false" signature="32:175" placeholder="..." />
-                <marker date="1386596997000" expanded="true" signature="344:379" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="407:506" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="547:583" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="628:835" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="873:941" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="980:1049" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="1093:1172" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="1217:1297" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="2662:2689" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="2713:2742" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="2782:2806" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="2830:2878" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="2902:2950" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="2974:3012" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3035:3074" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3122:3149" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3172:3216" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3263:3354" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3401:3469" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3492:3558" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3610:3631" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3654:3676" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3699:3730" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3753:3784" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3834:3880" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3922:3946" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="3987:4011" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4041:4072" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4087:4141" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4156:4192" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4207:4240" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4287:4310" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4325:4373" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4388:4434" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4449:4480" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4544:4574" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4597:4620" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4643:4691" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4714:4765" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4828:4857" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4884:4908" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="4935:4983" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5011:5037" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5105:5130" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5145:5176" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5191:5237" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5252:5285" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5344:5368" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5395:5421" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5448:5475" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5502:5536" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5564:5590" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5617:5645" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5672:5699" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5726:5754" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5782:5805" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5832:5861" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="5997:6046" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6074:6097" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6124:6147" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6174:6201" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6229:6260" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6287:6366" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6434:6460" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6487:6530" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6579:6625" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6640:6666" placeholder="{...}" />
-                <marker date="1386596997000" expanded="true" signature="6700:6859" placeholder="{...}" />
+                <marker date="1433506079000" expanded="false" signature="32:175" placeholder="..." />
+                <marker date="1433506079000" expanded="false" signature="343:354" placeholder=" { " />
+                <marker date="1433506079000" expanded="false" signature="373:379" placeholder=" }" />
+                <marker date="1433506079000" expanded="true" signature="407:506" placeholder="{...}" />
+                <marker date="1433506079000" expanded="false" signature="547:557" placeholder=" { " />
+                <marker date="1433506079000" expanded="false" signature="577:583" placeholder=" }" />
+                <marker date="1433506079000" expanded="true" signature="628:835" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="873:941" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="980:1049" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="1093:1172" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="1217:1297" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="2698:2725" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="2749:2778" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="2818:2842" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="2866:2914" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="2938:2986" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3010:3048" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3071:3110" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3158:3185" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3208:3252" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3299:3390" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3437:3505" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3528:3594" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3646:3667" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3690:3712" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3735:3766" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3789:3820" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3870:3916" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="3958:3982" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4023:4047" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4077:4108" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4123:4177" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4192:4228" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4243:4276" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4323:4346" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4361:4409" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4424:4470" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4485:4516" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4580:4607" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4630:4660" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4683:4706" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4729:4777" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4800:4851" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4914:4943" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="4970:4994" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5021:5069" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5097:5123" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5191:5216" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5231:5262" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5277:5323" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5338:5371" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5430:5454" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5481:5507" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5534:5561" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5588:5622" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5650:5676" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5703:5731" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5758:5785" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5812:5840" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5868:5891" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="5918:5947" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6083:6132" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6160:6183" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6210:6233" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6260:6287" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6315:6346" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6373:6452" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6520:6546" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6573:6616" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6665:6711" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6726:6752" placeholder="{...}" />
+                <marker date="1433506079000" expanded="true" signature="6786:6945" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xtplSyntaxHighlighter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplSyntaxHighlighter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="24" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="44" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.09221312">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -206,33 +162,29 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplLang.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplFileType.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplLoader.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplColorSettingsPage.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplParserDefinition.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/psi/xtplToken.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplSyntaxHighlighter.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtplCompletionContributor.java" />
-        <option value="$PROJECT_DIR$/src/com/xtplplugin/xtpl.flex" />
-        <option value="$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplElementType.java" />
-        <option value="$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplFile.java" />
-        <option value="$PROJECT_DIR$/src/ru/xtplplugin/xtplIcons.java" />
-        <option value="$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplToken.java" />
-        <option value="$PROJECT_DIR$/src/ru/xtplplugin/xtplSyntaxHighlighter.java" />
-        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/xtpl-lang-support.iml" />
+        <option value="$PROJECT_DIR$/.gitignor" />
         <option value="$PROJECT_DIR$/src/ru/xtplplugin/xtpl.flex" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
       </list>
     </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="22" />
     <option name="width" value="1420" />
-    <option name="height" value="827" />
+    <option name="height" value="819" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -251,10 +203,10 @@
             <id>Ant inspections</id>
           </State>
           <State>
-            <id>Code style issues</id>
+            <id>Class structureJava</id>
           </State>
           <State>
-            <id>Encapsulation issues</id>
+            <id>Code maturity issuesJava</id>
           </State>
           <State>
             <id>Grammar Inspections</id>
@@ -263,19 +215,19 @@
             <id>Groovy</id>
           </State>
           <State>
-            <id>Initialization issues</id>
-          </State>
-          <State>
-            <id>IntelliJ IDEA Platform Inspections</id>
-          </State>
-          <State>
             <id>Internationalization issues</id>
           </State>
           <State>
-            <id>Performance issues</id>
+            <id>Java</id>
           </State>
           <State>
-            <id>Probable bugs</id>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
           </State>
           <State>
             <id>Probable bugsGroovy</id>
@@ -284,15 +236,12 @@
             <id>TestNG</id>
           </State>
           <State>
-            <id>Threading issues</id>
-          </State>
-          <State>
-            <id>Visibility issues</id>
+            <id>Threading issuesJava</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Abstraction issues</id>
+            <id>Android</id>
           </State>
         </selected-state>
       </profile-state>
@@ -312,7 +261,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -324,14 +273,19 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="xtpl-lang-support" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -396,7 +350,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -413,6 +367,8 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -437,6 +393,7 @@
   </component>
   <component name="RunManager" selected="Plugin.xtpl-lang-plugin">
     <configuration default="false" name="All in xtpl-lang-support" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="xtpl-lang-support" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -464,6 +421,114 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/xtpl-lang-support.jar" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -472,20 +537,8 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -512,45 +565,11 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="xtpl-lang-plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="xtpl-lang-support" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <log_file path="$USER_HOME$/Library/Caches/IdeaIC12/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
+      <log_file path="$USER_HOME$/Library/Caches/IdeaIC14/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -570,117 +589,69 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f5430ff3-019c-4796-af2f-661f7ed392fe" name="Default" comment="" />
       <created>1373530782496</created>
+      <option name="number" value="Default" />
       <updated>1373530782496</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1420" height="827" extended-state="0" />
+    <frame x="10" y="22" width="1420" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31966054" sideWeight="0.33478895" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32533333" sideWeight="0.51690143" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32722145" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32266667" sideWeight="0.4830986" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.6831683" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31683168" sideWeight="0.6652111" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24929577" sideWeight="0.6831683" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.312" sideWeight="0.6612676" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.8857546" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
-    <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
-    </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <PATH>
@@ -699,176 +670,406 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplParserDefinition.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtpl.flex">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="23" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/parser/xtplParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplLexerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplColorSettingsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="21" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplFileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample.xtpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="121" selection-end="122" vertical-scroll-proportion="0.15957446" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="4" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.7777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="745" selection-end="757" vertical-scroll-proportion="0.21493903">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="7" selection-start="78" selection-end="78" vertical-scroll-proportion="0.06859756">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1433506079000" expanded="false" signature="32:175" placeholder="..." />
+            <marker date="1433506079000" expanded="false" signature="343:354" placeholder=" { " />
+            <marker date="1433506079000" expanded="false" signature="373:379" placeholder=" }" />
+            <marker date="1433506079000" expanded="true" signature="407:506" placeholder="{...}" />
+            <marker date="1433506079000" expanded="false" signature="547:557" placeholder=" { " />
+            <marker date="1433506079000" expanded="false" signature="577:583" placeholder=" }" />
+            <marker date="1433506079000" expanded="true" signature="628:835" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="873:941" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="980:1049" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="1093:1172" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="1217:1297" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2698:2725" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2749:2778" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2818:2842" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2866:2914" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2938:2986" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3010:3048" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3071:3110" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3158:3185" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3208:3252" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3299:3390" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3437:3505" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3528:3594" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3646:3667" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3690:3712" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3735:3766" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3789:3820" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3870:3916" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3958:3982" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4023:4047" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4077:4108" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4123:4177" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4192:4228" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4243:4276" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4323:4346" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4361:4409" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4424:4470" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4485:4516" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4580:4607" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4630:4660" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4683:4706" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4729:4777" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4800:4851" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4914:4943" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4970:4994" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5021:5069" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5097:5123" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5191:5216" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5231:5262" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5277:5323" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5338:5371" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5430:5454" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5481:5507" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5534:5561" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5588:5622" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5650:5676" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5703:5731" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5758:5785" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5812:5840" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5868:5891" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5918:5947" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6083:6132" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6160:6183" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6210:6233" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6260:6287" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6315:6346" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6373:6452" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6520:6546" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6573:6616" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6665:6711" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6726:6752" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6786:6945" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplSyntaxHighlighter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="24" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplElementImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="165" selection-end="180" vertical-scroll-proportion="0.08836524">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplIcons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="475" selection-end="475" vertical-scroll-proportion="0.1988218">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="359" selection-end="359" vertical-scroll-proportion="0.13254787">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplCompletionContributor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.02209131">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtpl.flex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="21" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.23076923">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
           <folding>
-            <marker date="1386596997000" expanded="false" signature="32:175" placeholder="..." />
-            <marker date="1386596997000" expanded="true" signature="344:379" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="407:506" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="547:583" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="628:835" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="873:941" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="980:1049" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="1093:1172" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="1217:1297" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="2662:2689" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="2713:2742" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="2782:2806" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="2830:2878" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="2902:2950" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="2974:3012" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3035:3074" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3122:3149" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3172:3216" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3263:3354" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3401:3469" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3492:3558" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3610:3631" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3654:3676" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3699:3730" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3753:3784" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3834:3880" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3922:3946" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="3987:4011" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4041:4072" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4087:4141" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4156:4192" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4207:4240" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4287:4310" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4325:4373" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4388:4434" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4449:4480" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4544:4574" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4597:4620" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4643:4691" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4714:4765" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4828:4857" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4884:4908" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="4935:4983" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5011:5037" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5105:5130" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5145:5176" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5191:5237" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5252:5285" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5344:5368" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5395:5421" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5448:5475" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5502:5536" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5564:5590" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5617:5645" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5672:5699" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5726:5754" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5782:5805" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5832:5861" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="5997:6046" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6074:6097" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6124:6147" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6174:6201" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6229:6260" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6287:6366" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6434:6460" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6487:6530" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6579:6625" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6640:6666" placeholder="{...}" />
-            <marker date="1386596997000" expanded="true" signature="6700:6859" placeholder="{...}" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtpl.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1433506079000" expanded="false" signature="32:175" placeholder="..." />
+            <marker date="1433506079000" expanded="false" signature="343:354" placeholder=" { " />
+            <marker date="1433506079000" expanded="false" signature="373:379" placeholder=" }" />
+            <marker date="1433506079000" expanded="true" signature="407:506" placeholder="{...}" />
+            <marker date="1433506079000" expanded="false" signature="547:557" placeholder=" { " />
+            <marker date="1433506079000" expanded="false" signature="577:583" placeholder=" }" />
+            <marker date="1433506079000" expanded="true" signature="628:835" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="873:941" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="980:1049" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="1093:1172" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="1217:1297" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2698:2725" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2749:2778" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2818:2842" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2866:2914" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2938:2986" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3010:3048" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3071:3110" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3158:3185" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3208:3252" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3299:3390" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3437:3505" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3528:3594" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3646:3667" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3690:3712" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3735:3766" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3789:3820" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3870:3916" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3958:3982" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4023:4047" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4077:4108" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4123:4177" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4192:4228" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4243:4276" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4323:4346" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4361:4409" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4424:4470" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4485:4516" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4580:4607" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4630:4660" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4683:4706" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4729:4777" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4800:4851" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4914:4943" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4970:4994" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5021:5069" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5097:5123" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5191:5216" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5231:5262" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5277:5323" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5338:5371" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5430:5454" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5481:5507" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5534:5561" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5588:5622" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5650:5676" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5703:5731" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5758:5785" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5812:5840" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5868:5891" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5918:5947" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6083:6132" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6160:6183" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6210:6233" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6260:6287" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6315:6346" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6373:6452" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6520:6546" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6573:6616" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6665:6711" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6726:6752" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6786:6945" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplSyntaxHighlighter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding>
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplParserDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplLexerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplColorSettingsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplFileType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7777778">
+          <caret line="38" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplElementType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06859756">
+          <caret line="3" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplElementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08836524">
+          <caret line="6" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplIcons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1988218">
+          <caret line="11" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/psi/xtplFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13254787">
+          <caret line="13" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplCompletionContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02209131">
+          <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/parser/xtplParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6494845">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03125">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtplSyntaxHighlighter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45061728">
+          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xtpl-lang-support.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2772074">
+          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample.xtpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06147541">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/xtplplugin/xtpl.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
+          <folding>
+            <marker date="1433506079000" expanded="false" signature="32:175" placeholder="..." />
+            <marker date="1433506079000" expanded="false" signature="343:354" placeholder=" { " />
+            <marker date="1433506079000" expanded="false" signature="373:379" placeholder=" }" />
+            <marker date="1433506079000" expanded="true" signature="407:506" placeholder="{...}" />
+            <marker date="1433506079000" expanded="false" signature="547:557" placeholder=" { " />
+            <marker date="1433506079000" expanded="false" signature="577:583" placeholder=" }" />
+            <marker date="1433506079000" expanded="true" signature="628:835" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="873:941" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="980:1049" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="1093:1172" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="1217:1297" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2698:2725" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2749:2778" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2818:2842" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2866:2914" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="2938:2986" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3010:3048" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3071:3110" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3158:3185" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3208:3252" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3299:3390" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3437:3505" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3528:3594" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3646:3667" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3690:3712" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3735:3766" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3789:3820" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3870:3916" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="3958:3982" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4023:4047" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4077:4108" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4123:4177" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4192:4228" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4243:4276" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4323:4346" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4361:4409" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4424:4470" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4485:4516" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4580:4607" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4630:4660" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4683:4706" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4729:4777" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4800:4851" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4914:4943" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="4970:4994" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5021:5069" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5097:5123" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5191:5216" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5231:5262" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5277:5323" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5338:5371" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5430:5454" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5481:5507" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5534:5561" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5588:5622" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5650:5676" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5703:5731" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5758:5785" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5812:5840" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5868:5891" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="5918:5947" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6083:6132" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6160:6183" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6210:6233" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6260:6287" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6315:6346" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6373:6452" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6520:6546" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6573:6616" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6665:6711" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6726:6752" placeholder="{...}" />
+            <marker date="1433506079000" expanded="true" signature="6786:6945" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09221312">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -913,7 +1114,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>IDEA IC-129.713</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -960,4 +1161,3 @@
     </states>
   </component>
 </project>
-
