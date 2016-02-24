@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>xtpl :: TodoMVC</title>
+
+	<link rel="stylesheet" href="http://todomvc.com/examples/vanillajs/node_modules/todomvc-common/base.css">
+	<link rel="stylesheet" href="http://todomvc.com/examples/vanillajs/node_modules/todomvc-app-css/index.css">
+</head>
+<body>
+
+<script id="app-template" type="text/xtpl">
+	.section.todoapp {
+		header.header {
+			h1 | todos
+			input.new-todo {
+				on-keyup: ctx.handleAddTodo(evt)
+				x-model: ctx.newTodo
+				placeholder: "What needs to be done?"
+				autofocus: true
+			}
+		}
+
+		section.main {
+			input#toggle-all.toggle-all {
+				type: "checkbox"
+			}
+			label[for="toggle-all"] | Mark all as complete
+
+			ul.todo-list {
+				for todo in ctx.filteredTodos() {
+					li {
+						class: {completed: todo.completed}
+
+						.view {
+							input.toggle {
+								type: "checkbox"
+								checked: todo.completed
+								on-change: ctx.handleToggle(todo)
+							}
+							label | {{todo.title}}
+							button.destroy { on-click: ctx.handleRemove(todo) }
+						}
+					}
+				}
+			}
+		}
+
+		if ctx.todos.length {
+			footer.footer {
+				span.todo-count | {{ctx.activeTodos().length}} items left
+
+				ul.filters {
+					li > a[href="#/"] | All
+					li > a[href="#/active"] | Active
+					li > a[href="#/completed"] | Completed
+				}
+
+				if ctx.hasCompleted() {
+					button.clear-completed {
+						on-click: ctx.handleClearCompleted()
+						| Clear completed
+					}
+				}
+			}
+		}
+	}
+</script>
+
+<div id="app-canvas"></div>
+
+<footer class="info">
+	<p>Double-click to edit a todo</p>
+	<p>Created by <a href="http://twitter.com/ibnRubaXa">RubaXa</a></p>
+	<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+</footer>
+
+<script src="http://restorder.ru/.js/vendor/core/xtpl.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
