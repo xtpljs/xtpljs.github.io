@@ -12,7 +12,7 @@ public class xtplLoader implements ApplicationComponent {
         ApplicationManager.getApplication().runWriteAction(
                 new Runnable() {
                     public void run() {
-                        FileTypeManager.getInstance().registerFileType(xtplFileType.INSTANCE, xtplFileType.DEFAULT_EXTENSION);
+                        FileTypeManager.getInstance().registerFileType(xtplFileType.INSTANCE, "xtpl");
                     }
                 }
         );

@@ -1,11 +1,11 @@
 # xtpl lang support
 
-JetBrains PhpStorm plugin for xtpl templater support (http://xtpl.ru/).
+IDEA PhpStorm plugin for xtpl template support (http://xtpl.ru/).
 ---
 
-* Syntax -- https://pbs.twimg.com/media/BPJc1WdCMAIhdN8.png:large
-* Tags -- https://pbs.twimg.com/media/BPJhkLCCMAERJmV.png:large
-* Attrs -- https://pbs.twimg.com/media/BPJhzyTCEAANp1Z.png:large
+ * Syntax -- https://pbs.twimg.com/media/BPJc1WdCMAIhdN8.png:large
+ * Tags -- https://pbs.twimg.com/media/BPJhkLCCMAERJmV.png:large
+ * Attrs -- https://pbs.twimg.com/media/BPJhzyTCEAANp1Z.png:large
 
 
 
@@ -18,7 +18,7 @@ http://www.rubaxa.org/screenshot/7a87d5e9361a82bedb96d50f18ac.png
 
 
 ## MIT LICENSE
-Copyright 2013 Lebedev Konstantin <ibnRubaXa@gmail.com>
+Copyright 2013-2016 Lebedev Konstantin <ibnRubaXa@gmail.com>
 https://github.com/rubaxa/xtpl-lang-support
 
 Permission is hereby granted, free of charge, to any person obtaining

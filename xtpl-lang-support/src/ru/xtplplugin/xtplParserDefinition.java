@@ -1,38 +1,26 @@
 package ru.xtplplugin;
 
-import com.intellij.lang.ASTNode;
-import com.intellij.lang.Language;
-import com.intellij.lang.ParserDefinition;
-import com.intellij.lang.PsiParser;
-import com.intellij.lexer.FlexAdapter;
+import com.intellij.lang.*;
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.project.Project;
-import com.intellij.psi.FileViewProvider;
-import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiFile;
-import com.intellij.psi.TokenType;
-import com.intellij.psi.tree.IFileElementType;
-import com.intellij.psi.tree.TokenSet;
+import com.intellij.psi.*;
+import com.intellij.psi.tree.*;
 import ru.xtplplugin.parser.xtplParser;
-import ru.xtplplugin.psi.xtplFile;
-import ru.xtplplugin.psi.xtplToken;
-import ru.xtplplugin.psi.xtplElementImpl;
+import ru.xtplplugin.psi.*;
 import org.jetbrains.annotations.NotNull;
-import ru.xtplplugin.psi.xtplElementImpl;
-import ru.xtplplugin.psi.xtplFile;
-
-import java.io.Reader;
 
 public class xtplParserDefinition implements ParserDefinition{
     public static final TokenSet WHITE_SPACES = TokenSet.create(TokenType.WHITE_SPACE);
     public static final TokenSet COMMENTS = TokenSet.create(xtplToken.COMMENT);
+
     public static final IFileElementType FILE = new IFileElementType(Language.<xtplLang>findInstance(xtplLang.class));
+
 
 
     @NotNull
     @Override
     public Lexer createLexer(Project project) {
-        return new FlexAdapter(new xtplLexer((Reader) null));
+        return new xtplLexerAdapter();
     }
 
     @NotNull

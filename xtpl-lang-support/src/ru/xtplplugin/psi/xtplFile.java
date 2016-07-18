@@ -4,8 +4,7 @@ package ru.xtplplugin.psi;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
-import ru.xtplplugin.xtplFileType;
-import ru.xtplplugin.xtplLang;
+import ru.xtplplugin.*;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

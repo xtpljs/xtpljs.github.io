@@ -1,17 +1,12 @@
 package ru.xtplplugin;
 
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import org.jetbrains.annotations.NonNls;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.*;
 
 import javax.swing.*;
 
 public class xtplFileType extends LanguageFileType {
     public static final xtplFileType INSTANCE = new xtplFileType();
-
-    @NonNls
-    public static final String DEFAULT_EXTENSION = "xtpl";
 
     private xtplFileType() {
         super(xtplLang.INSTANCE);
@@ -26,13 +21,13 @@ public class xtplFileType extends LanguageFileType {
     @NotNull
     @Override
     public String getDescription() {
-        return "xtpl files";
+        return "xtpl language file";
     }
 
     @NotNull
     @Override
     public String getDefaultExtension() {
-        return DEFAULT_EXTENSION;
+        return "xtpl";
     }
 
     @Nullable
